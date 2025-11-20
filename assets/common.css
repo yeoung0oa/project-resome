@@ -307,12 +307,12 @@ ul.bottom-navi {
   display: flex;
   flex-direction: column;
   width: 10rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   justify-content: center;
   align-items: center;
   row-gap: 0.5rem;
 }
 .bottom-navi li img{
-  width: 3.7rem;
-  height: 3.7rem;
+  width: 3rem;
+  height: 3rem;
 }
