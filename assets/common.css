@@ -46,7 +46,10 @@ h2{
   font-size: 3rem;
   font-weight: var(--bold);
 }
-.sub-title{font-size: 2.2rem;}
+.sub-title{
+  font-size: 2.2rem;
+  color: var(--medium-gray);
+}
 .button-tag{ /* keyword */
   font-size: 2rem;
   font-weight: var(--medium);
@@ -89,6 +92,7 @@ h2{
 }
 
 /* Card */
+
 .card{
   width: 28.2rem;
   height: 38.7rem;
@@ -103,51 +107,99 @@ h2{
   padding: 0;
   position: relative;
 }
-.card svg{
-  position: absolute;
-  top: 1.8rem;
-  right: 1.8rem;
+
+.card-inner{
+  position: relative;
+  width: inherit;
+  height: inherit;
 }
-.card-img{
+.card-inner .card-img{
   width: 100%;
   height: 22.3rem;
 }
-.card-img img{
+.card-inner .card-img img{
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
 }
-.card-txt{
+.card-inner .card-txt{
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   padding: 0 1.5rem;
-  
 }
-
-/* Card Typography */
-.card-title {
+.card .card-inner .card-txt ul li:nth-child(1){
+  font-size: 1.6rem;
+  color: var(--dark-gray);
+  padding-top: 0.5rem;
+}
+.card .card-inner .card-txt ul li:nth-child(2){
   font-size: 1.9rem;
   font-weight: var(--medium);
+  color: var(--black);
+  line-height: 2.6rem;
+  margin-top: 0.5rem;
 }
-.card-desc{font-size: 1.7rem;}
-.card-location{
+.card .card-inner .card-txt ul li:nth-child(3){
+  color: var(--secondary);
   font-size: 1.6rem;
-  color: #777;
+  font-weight: var(--medium);
+  margin-top: 0.7rem;
 }
-.card-discount{
+.card .card-inner .card-txt .text-inner{
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  gap: 0.5rem;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.card .card-inner .card-txt .text-inner h6{
+  color: var(--primary);
   font-weight: var(--bold);
-  color: #FF3165;
 }
-.card-price{
+.card .card-inner .card-txt .text-inner p{
+  color: var(--black);
   font-weight: var(--medium);
-  color: #333;
+  
 }
-.card-review{
-  font-size: 1.6rem;
-  font-weight: var(--medium);
-  color: #7B3AEB;
+.card .card-inner .card-txt .card-review span{
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  color: var(--primary);
+  background-color: var(--primary-sub);
+  padding: 0.3rem;
 }
+
+.card-inner .add-to-wish{
+    position: absolute;
+    right: 2.5rem;
+    top: 2rem;
+    cursor: pointer;
+    object-fit: cover;
+  }
+.card-inner .add-to-wish.active img{
+  content: url(/image/icon/hearticon-1.png);
+}
+
+/* 영화 추천 이미지 카드 */
+.swiper-slide a img{
+  display: block;
+  width: 18rem;
+  height: 26.7rem;
+  border-radius: 1rem 1rem;
+  opacity: 0.7;
+  object-fit: cover;
+  box-shadow: 0 0 10px 0 rgba(255,255,255,0.3);
+}
+
+
+
+/* SPA_______________________________________________ */
+
 
 /* header_______________________________ */
 header{
@@ -297,6 +349,7 @@ main{
   transform: translateX(-50%);
   border-top: 1px solid #EDEDED;
   background-color: #fff;
+  z-index: 100;
 }
 ul.bottom-navi {
   display: flex;
