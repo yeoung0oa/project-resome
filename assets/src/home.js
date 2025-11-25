@@ -19,12 +19,12 @@ export default{
 $(document).ready(function(){
 
   let slideContainer = $('.slide'),
-      slideWidth = slideContainer.width(),
-      slideHeight = slideContainer.height(),
-      slideCount = $('.slide-items li').length,
-      slideItemsWidth = slideWidth * slideCount,
-      slidePrev = slideContainer.find(".control .prev"),
-      slideNext = slideContainer.find(".control .next");
+    slideWidth = slideContainer.width(),
+    slideHeight = slideContainer.height(),
+    slideCount = $('.slide-items li').length,
+    slideItemsWidth = slideWidth * slideCount,
+    slidePrev = slideContainer.find(".control .prev"),
+    slideNext = slideContainer.find(".control .next");
 
   let pageNumber = 0;
 
@@ -75,4 +75,52 @@ $(document).ready(function(){
     clearInterval(slideAuto);
     slideLeft();
   });
+
+  /* 하트 클릭 */
+  const wishBtn = document.querySelectorAll('.s1-card-img .add-to-wish');
+  wishBtn.forEach(item => {
+    item.addEventListener('click', ()=>{
+      item.classList.toggle('active');
+    });
+  });
+  /* 하트 클릭2 */
+  const placeBtn = document.querySelectorAll('.place_icon');
+  placeBtn.forEach(item => {
+    item.addEventListener('click', ()=>{
+      item.classList.toggle('active');
+    });
+  });
+  /* 하트클릭3 */
+  const communityBtn = document.querySelectorAll('.swiper3 .card .card-inner .add-to-wish');
+  communityBtn.forEach(item => {
+    item.addEventListener('click', ()=>{
+      item.classList.toggle('active');
+    });
+  });
+  /* 하트클릭4 */
+  const storyBtn = document.querySelectorAll('.best-card img:nth-of-type(2)');
+  storyBtn.forEach(item => {
+    item.addEventListener('click', ()=>{
+      item.classList.toggle('active');
+    });
+  });
+
+  /* 장소 탭메뉴 */
+  $(".swiper2").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+
+    let result = $(this).attr("data-alt");
+    $(".place-tab-contents > div").removeClass("active");
+    $("#"+result).addClass("active").hide().fadeIn();
+  });
+
+  /* BEST 탭메뉴 */
+  $(".best-list").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+
+    let result = $(this).attr("data-alt");
+    $(".best-container .best-cards").removeClass("active");
+    $("#"+result).addClass("active").hide().fadeIn();
+  });
+
 });

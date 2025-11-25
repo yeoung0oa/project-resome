@@ -49,7 +49,6 @@ h2{
 .sub-title{
   font-size: 2.2rem;
   color: var(--medium-gray);
-  margin-top: 0.7rem;
 }
 .button-tag{ /* keyword */
   font-size: 2rem;
@@ -357,7 +356,7 @@ ul.bottom-navi {
   justify-content: center;
   padding: 1rem 0;
 }
-.bottom-navi li{
+.bottom-navi li a{
   display: flex;
   flex-direction: column;
   width: 10rem;
