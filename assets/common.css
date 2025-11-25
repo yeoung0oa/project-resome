@@ -210,7 +210,7 @@ header{
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  z-index: 50;
+  z-index: 100;
 }
 .header-inner{
   width: 100%;
@@ -349,14 +349,14 @@ main{
   transform: translateX(-50%);
   border-top: 1px solid #EDEDED;
   background-color: #fff;
-  z-index: 100;
+  z-index: 50;
 }
 ul.bottom-navi {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
-.bottom-navi li{
+.bottom-navi li a{
   display: flex;
   flex-direction: column;
   width: 10rem;

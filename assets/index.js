@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  $(".btn").click(function () {
+  $(".btn").click(function (e) {
+    e.preventDefault();
     $(this).toggleClass("active");
 
     if ($(this).hasClass("active")) {
@@ -37,6 +38,14 @@ $(document).ready(function(){
       parentLi.addClass("open");
       parentLi.find(".sub").stop(true, true).slideDown();
     }
+  });
+
+  /* 이동시 메뉴닫기 */
+  $("aside").on("click", "a[data-link]", function () {
+    // 메뉴 닫기 (active 클래스 제거)
+    $(".header .btn").removeClass("active");
+    $("aside").removeClass("active");
+    $(".back").removeClass("active");
   });
   
 });
