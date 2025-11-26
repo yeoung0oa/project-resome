@@ -106,7 +106,7 @@ $(document).ready(function(){
   });
 
   /* 장소 탭메뉴 */
-  $(".swiper2").click(function(){
+  $(".swiper2").not(":last").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 
     let result = $(this).attr("data-alt");

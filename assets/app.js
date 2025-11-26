@@ -18,6 +18,8 @@ const routes = {
   '/check':     { id: 'check',           file: '/pages/check.html' },
   '/community':     { id: 'community',           file: '/pages/community.html' },
   '/cart':     { id: 'cart',           file: '/pages/cart.html' },
+  '/cooking':     { id: 'cooking',           file: '/pages/cooking.html' },
+  '/music':     { id: 'music',           file: '/pages/music.html' }
 };
 
 let current = { id: null, api: null };
