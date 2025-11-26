@@ -21,6 +21,16 @@ $(document).ready(function () {
     });
   });
 
+//movie slider
+document.querySelectorAll('.swipers').forEach(function(elem) {
+  new Swiper(elem, {
+    slidesPerView: 3,
+    spaceBetween: -30,
+    freeMode: true
+  });
+});
+
+
 
 //icon click
 $(document).ready(function () {

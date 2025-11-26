@@ -1,10 +1,12 @@
-body{
-  max-width: 64rem;
-  height: auto;
-  margin: auto;
+.detail-page{
+  margin: 0 auto;
+  padding: 0;
 }
-section{width: 59.5rem;}
-nav,section{margin: auto;}
+.wrap{
+  max-width: 59.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .bar{
   width: 100%;
@@ -12,6 +14,7 @@ nav,section{margin: auto;}
   height: 7.4rem;
   position: relative;
   border-bottom: 2px solid #ededed;
+  margin-top: 0; !important
 }
 .bar-inner{
   width: 100%;
@@ -27,7 +30,7 @@ nav,section{margin: auto;}
   height: 4.4rem;
   width: 4.4rem;
   margin-left: 2.2rem;
-  background: url(../image/hm/backbtn.png)no-repeat center/4.4rem;
+  background: url(/image/hm/backbtn.png)no-repeat center/4.4rem;
 }
 .bar-inner h4{
   font-size: 2.7rem;
@@ -160,21 +163,28 @@ nav,section{margin: auto;}
   display: none;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
   z-index: 9999;
 }
-.modal-content {
+.modal-content{
   background: var(--primary);
   color: var(--white);
   padding: 2.5rem;
   border-radius: 2rem;
-  width: 85%;
-  max-width: 420px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
   text-align: center;
-  position: relative;
 }
 .modal-content img {
   width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  display: block;
   margin-bottom: 2rem;
+  border-radius: 2rem;
 }
 #modal-signup-btn,
 #modal-login-btn{
@@ -389,22 +399,23 @@ nav,section{margin: auto;}
   font-size: 1.3rem;
   color: var(--dark-gray);
 }
+
 .swiper-wrapper{
   display: flex;
   align-items: center;
 }
-.more-slide{
+.more-slide-1{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 5rem;
 }
-.more-slide a{
+.more-slide-1 a{
   width: 100%;
   height: 100%;
   display: block;
 }
-.more-slide p{
+.more-slide-1 p{
   font-size: 1.9rem;
   font-weight: var(--regular);
 }
@@ -481,13 +492,12 @@ nav,section{margin: auto;}
   margin-bottom: 3rem;
   font-size:  2.7rem;
 }
-.cards{
+.cards-1{
   display: flex;
   flex-direction: column;
   background-color: var(--default-color);
 }
-.card-row,
-.card1{
+.card-row-1{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -495,8 +505,8 @@ nav,section{margin: auto;}
   margin-bottom: 2.7rem;
   margin-top: 3rem;
 }
-.card-row:nth-child(2){margin-top: 0;}
-.card{
+.card-row-1:nth-child(2){margin-top: 0;}
+.card-1{
   width: 28.2rem;
   height: 38.7rem;
   border-radius: 3rem;
@@ -510,47 +520,47 @@ nav,section{margin: auto;}
   padding: 0;
   position: relative;
 }
-.card-inner{
+.card-inner-1{
   position: relative;
   width: inherit;
   height: inherit;
 }
-.card-inner .card-img{
+.card-inner-1 .card-img-1{
   width: 100%;
   height: 22.3rem;
 }
-.card-inner .card-img img{
+.card-inner-1 .card-img-1 img{
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 2rem 2rem 0 0;
 }
-.card-inner .card-txt{
+.card-inner-1 .card-txt-1{
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   padding: 0 1.5rem;
 }
-.card .card-inner .card-txt ul li:nth-child(1){
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(1){
   font-size: 1.6rem;
   color: var(--dark-gray);
   padding-top: 0.5rem;
 }
-.card .card-inner .card-txt ul li:nth-child(2){
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(2){
   font-size: 1.9rem;
   font-weight: var(--medium);
   color: var(--black);
   line-height: 2.6rem;
   margin-top: 0.5rem;
 }
-.card .card-inner .card-txt ul li:nth-child(3){
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(3){
   color: var(--secondary);
   font-size: 1.6rem;
   font-weight: var(--medium);
   margin-top: 0.7rem;
 }
-.card .card-inner .card-txt .text-inner{
+.card-1 .card-inner-1  .card-txt-1  .text-inner-1 {
   display: flex;
   align-items: center;
   height: 1.8rem;
@@ -559,30 +569,30 @@ nav,section{margin: auto;}
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.card .card-inner .card-txt .text-inner h6{
+.card-1  .card-inner-1  .card-txt-1  .text-inner-1  h6{
   color: var(--primary);
   font-weight: var(--bold);
 }
-.card .card-inner .card-txt .text-inner p{
+.card-1  .card-inner-1 .card-txt-1 .text-inner-1 p{
   color: var(--black);
   font-weight: var(--medium);
 }
-.card .card-inner .card-txt .card-review span{
+.card-1 .card-inner-1 .card-txt-1 .card-review-1 span{
   font-size: 1.4rem;
   font-weight: var(--regular);
   color: var(--primary);
   background-color: var(--primary-sub);
   padding: 0.3rem;
 }
-.card-inner .add-to-wish{
+.card-inner-1 .add-to-wish{
     position: absolute;
     right: 2.5rem;
     top: 2rem;
     cursor: pointer;
     object-fit: cover;
   }
-.card-inner .add-to-wish.active img{
-  content: url(../image/hm/hearticon-1.png);
+.card-inner-1 .add-to-wish.active img{
+  content: url(/image/hm/hearticon-1.png);
 }
 .morebtn{
   display: block;
