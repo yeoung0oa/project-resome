@@ -42,10 +42,16 @@ $(document).ready(function(){
 
   /* 이동시 메뉴닫기 */
   $("aside").on("click", "a[data-link]", function () {
-    // 메뉴 닫기 (active 클래스 제거)
-    $(".header .btn").removeClass("active");
-    $("aside").removeClass("active");
-    $(".back").removeClass("active");
+    // 1. 햄버거 버튼 모션 초기화
+    $(".btn").removeClass("active");
+    
+    // 2. 메뉴와 배경 숨기기 (fadeOut 사용!)
+    $("aside").fadeOut();
+    $(".back").fadeOut();
+
+    // 3. 열려있던 서브메뉴들도 초기화
+    $(".sub").slideUp();
+    $(".main").removeClass("open");
   });
   
 });

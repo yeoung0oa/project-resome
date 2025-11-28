@@ -1,3 +1,5 @@
+import { bus } from '/assets/common.js';
+
 $(function () {
   $(".trigger_btn").on("click", function () {
     const card = $(this).closest(".magazine-card");
