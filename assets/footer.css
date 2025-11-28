@@ -1,0 +1,25 @@
+
+.site-footer{
+  width: 64rem;
+  height: 100%;
+  color: #4E4E4E;
+  background-color: #FDEDF3;
+}
+.footer-inner{padding: 3rem;}
+.footer-name{
+  padding: 2.5rem 0;
+  font-weight: var(--medium);
+}
+.site-footer p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.footer-desc{
+  display: flex;
+  gap: 3rem;
+}
+.copy{
+  font-size: 1.7rem;
+  padding-bottom: 3rem;
+}
