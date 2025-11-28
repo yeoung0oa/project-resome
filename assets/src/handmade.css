@@ -25,7 +25,7 @@
 .bar-inner h4{
   font-size: 2.7rem;
   font-weight: var(--medium);
-  padding-left: 7rem;
+  padding-left: 3rem;
 }
 .category-content{
   width: 100%;
@@ -54,7 +54,7 @@
   font-weight: var(--regular);
 }
 .category-content .category-inner .category-img img{
-  /* width: 7.4rem; */
+  width: 7.4rem;
   height: 9.3rem;
   margin-right: 8rem;
 }
@@ -234,7 +234,7 @@
 .swipers img:hover{opacity: 1;}
 
 /* 3번째 섹션(다른카테고리 아이콘) */
-.icons{
+.made-icons{
   margin: auto;
   margin-top: 4.4rem;
   width: 57.2rem;
@@ -242,37 +242,36 @@
   grid-template-columns: repeat(2,1fr);
   gap: 2.2rem;
 }
-.icons .box{
+.made-icons .box{
   width: 27.5rem;
   height: 27.5rem;
   border-radius: 3rem;
   position: relative;
   display: flex;
 }
-.icons .box:last-child{
+.made-icons .box:last-child{
   grid-column: span 1;
   justify-self: center;
 }
-
-.icon{
+.made-icon{
   margin-top: 5rem;
   margin-left: 3rem;
   font-size: 2.9rem;
 }
-.icon h6{
+.made-icon h6{
   font-family: 'SchoolSafetyRoundedSmile', sans-serif;
   font-weight: var(--bold);
 }
-.icon span{color: var(--primary);}
+.made-icon span{color: var(--primary);}
 
 
-.icons .box:nth-child(1){background-color: #F2EDFB;}
-.icons .box:nth-child(2){background-color: #FFF8F4;}
-.icons .box:nth-child(3){background-color: #FFF8F4;}
-.icons .box:nth-child(4){background-color: #F2EDFB;}
-.icons .box:nth-child(5){background-color: #F2EDFB;}
-.icons .box img{
-  /* width: 13.3rem; */
+.made-icons .box:nth-child(1){background-color: #F2EDFB;}
+.made-icons .box:nth-child(2){background-color: #FFF8F4;}
+.made-icons .box:nth-child(3){background-color: #FFF8F4;}
+.made-icons .box:nth-child(4){background-color: #F2EDFB;}
+
+.made-icons .box img{
+  width: 15rem;
   height: 16rem;
   object-fit: cover;
   position: absolute;
@@ -280,7 +279,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.icons .box span{
+.made-icons .box span{
   font-size: 2.5rem;
   font-weight: var(--medium);
   position: absolute;
@@ -290,11 +289,10 @@
   width: 100%;
   text-align: center;
 }
-.icons .box:nth-child(1) span{color: var(--secondary);}
-.icons .box:nth-child(2) span{color: #97654B;}
-.icons .box:nth-child(3) span{color: #97654B;}
-.icons .box:nth-child(4) span{color: var(--secondary);}
-.icons .box:nth-child(5) span{color: var(--secondary);}
+.made-icons .box:nth-child(1) span{color: var(--secondary);}
+.made-icons .box:nth-child(2) span{color: #97654B;}
+.made-icons .box:nth-child(3) span{color: #97654B;}
+.made-icons .box:nth-child(4) span{color: var(--secondary);}
 
 /* footer____________________________________ */
 .site-footer{

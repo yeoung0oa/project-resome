@@ -236,41 +236,46 @@
 .swiper img:hover{opacity: 1;}
 
 /* 3번째 섹션(다른카테고리 아이콘) */
-.icons{
+.cook-icons{
   margin: auto;
   margin-top: 4.4rem;
   width: 57.2rem;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,2fr);
   gap: 2.2rem;
 }
-.icons .box{
+.cook-icons .box{
   width: 27.5rem;
   height: 27.5rem;
   border-radius: 3rem;
   position: relative;
   display: flex;
 }
+.cook-icons .box:last-child{
+  grid-column: span 1;
+  justify-self: center;
+}
 
-.icon{
+
+.cook-icon{
   margin-top: 5rem;
   margin-left: 3rem;
   font-size: 2.9rem;
 }
-.icon h6{
+.cook-icon h6{
   font-family: 'SchoolSafetyRoundedSmile', sans-serif;
   font-weight: var(--bold);
 }
-.icon span{color: var(--primary);}
+.cook-icon span{color: var(--primary);}
 
 
-.icons .box:nth-child(1){background-color: #F2EDFB;}
-.icons .box:nth-child(2){background-color: #FFF8F4;}
-.icons .box:nth-child(3){background-color: #FFF8F4;}
-.icons .box:nth-child(4){background-color: #F2EDFB;}
-.icons .box:nth-child(5){background-color: #F2EDFB;}
-.icons .box:nth-child(6){background-color: #FFF8F4;}
-.icons .box img{
+.cook-icons .box:nth-child(1){background-color: #F2EDFB;}
+.cook-icons .box:nth-child(2){background-color: #FFF8F4;}
+.cook-icons .box:nth-child(3){background-color: #FFF8F4;}
+.cook-icons .box:nth-child(4){background-color: #F2EDFB;}
+.cook-icons .box:nth-child(5){background-color: #F2EDFB;}
+.cook-icons .box:nth-child(6){background-color: #FFF8F4;}
+.cook-icons .box img{
   width: 15rem;
   object-fit: cover;
   position: absolute;
@@ -278,7 +283,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.icons .box span{
+.cook-icons .box span{
   font-size: 2.5rem;
   font-weight: var(--medium);
   position: absolute;
@@ -288,12 +293,12 @@
   width: 100%;
   text-align: center;
 }
-.icons .box:nth-child(1) span{color: var(--secondary);}
-.icons .box:nth-child(2) span{color: #97654B;}
-.icons .box:nth-child(3) span{color: #97654B;}
-.icons .box:nth-child(4) span{color: var(--secondary);}
-.icons .box:nth-child(5) span{color: var(--secondary);}
-.icons .box:nth-child(6) span{color: #97654B;}
+.cook-icons .box:nth-child(1) span{color: var(--secondary);}
+.cook-icons .box:nth-child(2) span{color: #97654B;}
+.cook-icons .box:nth-child(3) span{color: #97654B;}
+.cook-icons .box:nth-child(4) span{color: var(--secondary);}
+.cook-icons .box:nth-child(5) span{color: var(--secondary);}
+.cook-icons .box:nth-child(6) span{color: #97654B;}
 
 /* footer____________________________________ */
 .site-footer{

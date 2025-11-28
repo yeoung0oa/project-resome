@@ -251,6 +251,10 @@
   position: relative;
   display: flex;
 }
+.icons .box:last-child{
+  grid-column: span 1;
+  justify-self: center;
+}
 
 .icon{
   margin-top: 5rem;

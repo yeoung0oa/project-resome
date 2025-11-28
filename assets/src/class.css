@@ -271,7 +271,7 @@
 .icons .box:nth-child(4){background-color: #F2EDFB;}
 .icons .box:nth-child(5){background-color: #F2EDFB;}
 .icons .box img{
-  width: 13.3rem;
+  width: 15rem;
   height: 16rem;
   object-fit: cover;
   position: absolute;
