@@ -19,7 +19,11 @@ const routes = {
   '/community':     { id: 'community',           file: '/pages/community.html' },
   '/cart':     { id: 'cart',           file: '/pages/cart.html' },
   '/cooking':     { id: 'cooking',           file: '/pages/cooking.html' },
-  '/music':     { id: 'music',           file: '/pages/music.html' }
+  '/music':     { id: 'music',           file: '/pages/music.html' },
+  '/handmade':     { id: 'handmade',           file: '/pages/handmade.html' },
+  '/tarot':     { id: 'tarot',           file: '/pages/tarot.html' },
+  '/activity':     { id: 'activity',           file: '/pages/activity.html' },
+
 };
 
 let current = { id: null, api: null };
