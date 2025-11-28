@@ -107,3 +107,112 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re:some</title>
+  <link rel="stylesheet" href="/assets/common.css">
+  <link rel="stylesheet" href="/assets/src/class.css">
+  <link rel="stylesheet" href="/assets/src/detail.css">
+
+  <!-- 외부 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Router(E5 Module) --> 
+  <script type="module" src="/assets/app.js"></script>
+  <script type="module" src="/assets/src/class.js"></script>
+  <script type="module" src="/assets/src/detail.js"></script>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <a data-link href="/"><img src="image/icon/icon.png" alt=""></a>
+      <a href="#" class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <aside>
+      <div class="aside-inner">
+        <div class="aside-header">
+          <div class="aside-profile"><img src="image/icon/smile.svg" alt=""></div>
+          <p><a data-link href="/login">로그인</a> 후 이용해주세요!</p>
+        </div>
+        <ul class="header-gnb">
+          <li class="main active"><a href="#none">클래스</a>
+            <ul class="sub">
+              <li><a data-link href="/class">뷰티</a></li>
+              <li><a data-link href="/cooking">쿠킹/베이킹</a></li>
+              <li><a data-link href="/music">음악</a></li>
+              <li><a data-link href="/handmade">수공예</a></li>
+              <li><a data-link href="/activity">액티비티</a></li>
+              <li><a data-link href="/tarot">사주/타로</a></li>
+            </ul>
+          </li>
+          <li class="main"><a data-link href="/magazine">리솜 매거진</a></li>
+          <li class="main"><a data-link href="/event">리솜 이벤트</a></li>
+          <li class="main"><a data-link href="/community">커뮤니티</a></li>
+          <li class="main"><a data-link href="/my">마이페이지</a></li>
+        </ul>
+        <div class="sns">
+          <div><img src="image/icon/Instagram.png" alt="Instagram"></div>
+          <div><img src="image/icon/Facebook.png" alt="Facebook"></div>
+          <div><img src="image/icon/TikTok.png" alt="TikTok"></div>
+          <div><img src="image/icon/YouTube.png" alt="YouTube"></div>
+        </div>
+      </div>
+    </aside>
+    <div class="back"></div>
+  </header>
+
+  <main id="app" class="app">
+    <!-- 페이지 생성 -->
+  </main>
+
+  <div class="navi">
+    <ul class="bottom-navi">
+      <li>
+        <a data-link href="/">
+          <img src="image/icon/home.svg" alt="home">
+          홈
+        </a>
+      </li>
+      <li>
+        <a data-link href="/cart">
+          <img src="image/icon/cart.svg" alt="cart">
+          찜목록
+        </a>
+      </li>
+      <li>
+        <a data-link href="/event">
+          <img src="image/icon/event.svg" alt="event">
+          이벤트
+        </a>
+      </li>
+      <li>
+        <a data-link href="/community">
+          <img src="image/icon/community.svg" alt="community">
+          커뮤니티
+        </a>
+      </li>
+      <li>
+        <a data-link href="/my">
+          <img src="image/icon/mypage.svg" alt="mypage">
+          마이페이지
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="/assets/index.js"></script>
+</body>
+</html>
+
