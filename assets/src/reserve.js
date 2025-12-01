@@ -25,46 +25,44 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // select box________________________________________________________
-$(window).on('load', function() {
-    selectCus();
-})
+$(document).on('click', '.select_cus .trigger', function(e) {
+  const $select = $(this).closest('.select_cus');
+  const $options = $select.find('.option');
 
-function selectCus() {
-  $('.select_cus').each(function() {
-    const $select = $(this);
-    const $selectTrigger = $select.find('.trigger');
-    const $options = $select.find('.option');
-    const $hiddenInput = $select.find('.opt_val');
+  // 다른 select 닫기
+  $('.select_cus').not($select).removeClass('active').find('.option').hide();
 
-    $selectTrigger.click(function() {
-      $options.toggle();
-      $select.toggleClass('active');
-      $('.select_cus').not($select).find('.option').hide();
-      $('.select_cus').not($select).removeClass('active');
-    });
+  // 현재 토글
+  $select.toggleClass('active');
+  $options.toggle();
 
-    $options.find('li').click(function() {
-      const value = $(this).data('value');
-      const text = $(this).text();
-      $select.find('.trigger_txt').text(text);
-      $options.hide();
-      $select.removeClass('active');
-      if (value != '') {
-        $select.addClass('select')
-      } else {
-        $select.removeClass('select')
-      }
-      $hiddenInput.val(value);
-    });
-  });
+  e.stopPropagation();
+});
 
-  $(document).click(function(e) {
-    if (!$(e.target).closest('.select_cus').length) {
-      $('.select_cus .option').hide();
-      $('.select_cus').removeClass('active');
-    }
-  });
-}
+// 옵션 선택
+$(document).on('click', '.select_cus .option li', function(e) {
+  const $li = $(this);
+  const $select = $li.closest('.select_cus');
+  const value = $li.data('value');
+  const text = $li.text();
+
+  $select.find('.trigger_txt').text(text);
+  $select.find('.opt_val').val(value);
+
+  if (value) {
+    $select.addClass('select');
+  } else {
+    $select.removeClass('select');
+  }
+
+  $select.removeClass('active').find('.option').hide();
+  e.stopPropagation();
+});
+
+// 바깥 클릭시 닫기
+$(document).on('click', function() {
+  $('.select_cus').removeClass('active').find('.option').hide();
+});
 
 //숫자증감__________________________________________________________________
 const qtys = document.querySelectorAll('.qty');
@@ -91,4 +89,41 @@ qtys.forEach((qtys)=>{
     }
   });
 
+});
+
+// 결제 버튼 활성화 _____________________________________________________
+function checkReserveConditions() {
+  const nameInput = $('.reserve-s1 input[type="text"]').val().trim();
+
+  const adult = parseInt($('.reserve-s2 .qty-wrap:eq(0) input').val());
+  const kid = parseInt($('.reserve-s2 .qty-wrap:eq(1) input').val());
+
+  const requiredOption = $('.reserve-s4 .select_cus .opt_val').first().val();
+
+  const $button = $('.button2');
+
+  const cond1 = nameInput.length > 0;
+  const cond2 = !(adult === 0 && kid === 0);
+  const cond3 = requiredOption !== "";
+
+  if (cond1 && cond2 && cond3) {
+    $button.prop('disabled', false).addClass('active');
+  } else {
+    $button.prop('disabled', true).removeClass('active');
+  }
+}
+
+$(document).ready(function () {
+  $('.reserve-s1 input[type="text"]').on('input', checkReserveConditions);
+
+  $('.reserve-s2 .qty input').on('input', checkReserveConditions);
+  $('.reserve-s2 .qty .plus, .reserve-s2 .qty .minus').on('click', function () {
+    setTimeout(checkReserveConditions, 10); // 값 업데이트 후 체크
+  });
+
+  $(document).on('click', '.select_cus .option li', function () {
+    setTimeout(checkReserveConditions, 10);
+  });
+
+  checkReserveConditions();
 });
