@@ -3,7 +3,7 @@
   padding: 0;
 }
 .wrap{
-  max-width: 43rem;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 0;
 }
@@ -164,15 +164,19 @@
   z-index: 9999;
 }
 .modal-content{
-  background: var(--primary);
   color: var(--white);
   padding: 2.5rem;
   border-radius: 2rem;
   width: 90%;
-  max-width: 40rem;
-  max-height: 90vh;
+  max-width: 50rem;
+  max-height: 100vh;
   overflow-y: auto;
   text-align: center;
+}
+.modal-content #modal-signup-btn,
+.modal-content #modal-login-btn{
+  background-color: var(--primary);
+  padding: 1.2rem 13rem;
 }
 .modal-content img {
   width: 100%;
@@ -590,8 +594,14 @@
     cursor: pointer;
     object-fit: cover;
   }
+.card-inner-1 .add-to-wish img{
+  width: 2.1rem;
+  height: 1.8rem;
+}
 .card-inner-1 .add-to-wish.active img{
   content: url(/image/hm/hearticon-1.png);
+  width: 2.1rem;
+  height: 1.8rem;
 }
 .morebtn{
   display: block;
