@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .community{
   max-width: 43rem;
   width: 100%;
@@ -82,36 +83,6 @@
   z-index: 0;
 }
 
-/*
-.sparkle {
-  position: absolute;
-  width: 5.2rem;
-  height: 7rem;
-  background: url("../image/community/sparkle-2.png") no-repeat center;
-  opacity: 0;
-  animation: sparkleTwinkle 2.2s infinite ease-in-out;
-  z-index: 5;
-}
-
-.sparkle-1 {
-  top: 15%;
-  left: 12%;
-  animation-delay: 0s;
-}
-
-.sparkle-2 {
-  top: 26%;
-  right: 14%;
-  animation-delay: 0.9s;
-}
-
-@keyframes sparkleTwinkle {
-  0%   { opacity: 0;   transform: scale(0.8); }
-  40%  { opacity: .9;  transform: scale(1);   }
-  60%  { opacity: .3;  transform: scale(.9);  }
-  100% { opacity: 0;   transform: scale(0.8); }
-}*/
-
 .hero-bg img{
   width: 100%;
   position: relative;
@@ -129,11 +100,12 @@
   width: 32.7rem;
 }
 .hero-cardbg img{
+/* border: 5px solid #000; */
   position: relative;
   z-index: 2;
   top: -6rem;
-  left: -1.5rem;
-  width: 46rem;
+  left: -0.05rem;
+  width: 43rem;
 }
 .hero-card{
   position: absolute;
@@ -199,9 +171,6 @@
   font-weight: var(--regular);
   line-height: normal;
   letter-spacing: -0.4px;
-}
-.hero-review-text:nth-child(2){
-
 }
 .hero-review-img img{
   width: 7.9rem;
@@ -330,14 +299,14 @@
 .card-avatar{
   /*border: 1px solid #000;*/
   position:absolute;
-   width:8rem;
+  width:8rem;
   bottom: 0.1rem;
   left: -10.8rem;
   height: inherit;
   opacity: 0;
   transform: translateX(20px);
   pointer-events: none;
-   z-index:4;
+  z-index:4;
 }
 .card-avatar .card-icon{
   display: flex;
@@ -361,7 +330,7 @@
 .trigger {
   width: 2.7rem;
   height: 2.7rem;
-   margin: auto;
+  margin: auto;
   background-color: #fff;
   border: 2px solid var(--primary);
   border-radius: 50%;
@@ -370,7 +339,7 @@
   align-items: center;
   position:absolute;
   right: 0;
-   bottom: 0; 
+  bottom: 0; 
   cursor: pointer;
   z-index: 2;
 }
@@ -462,7 +431,466 @@
   color: #7B3AEB;
 }
 
+/* ------------footer */
+.site-footer{
+  width: 100%;
+  height: 100%;
+  color: #4E4E4E;
+  background-color: #FDEDF3;
+  padding-bottom: 3rem;
+  margin-top: 6rem;
+}
+.footer-inner{padding: 1.5rem;}
+.footer-name{
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  font-weight: var(--medium);
+}
+.site-footer p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+.footer-desc{
+  display: flex;
+  gap: 1.5rem;
+}
+.copy{
+  font-size: 1.1rem;
+  padding-bottom: 3rem;
+}
+=======
+.community{
+  max-width: 43rem;
+  width: 100%;
+  /*margin: 0 auto;*/
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--default-fs);
+  color: var(--default-color);
+}
+.community-wrap{
+  width: 100%;
+}
+.community-header{
+  display: flex;
+  height: 5.2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.3rem 2.5rem;
+}
+.btn-back img{
+  width: 2.2rem;
+  margin-top: 0.3rem;
+}
+.btn-wish img{
+  width: 2.4rem;
+}
+.community-title{
+  font-size: 1.8rem;
+  font-weight: var(--medium);
+}
 
+.top-menu-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero */
+.hero{
+  background: #B92027;
+  height: 132rem;
+  position: relative;
+}
+.hero-inner{
+  position: relative;
+  width: 43rem;
+}
+.hero-head{
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-eyebrow{
+  padding: 0.4rem 1.9rem;
+  border-radius: 50rem;
+  width: fit-content;
+  font-size: 1.7rem;
+  font-weight: var(--medium);
+  border: 1px solid #fff;
+  margin: 4.6rem 0 3rem 0;
+}
+.hero-kicker{
+  font-family: 'SiwonhanSeolreim';
+  font-size: 2.5rem;
+}
+.hero-title{
+  font-family: 'Cafe24ClassicType';
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 8.1rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+}
+.hero-visual{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero-bg img{
+  width: 100%;
+  position: relative;
+}
+.hero-window img{
+  position: absolute;
+  top: 16.7rem;
+  left: 0.3rem;
+  width: 41.5rem;
+}
+.hero-character img{
+  position: absolute;
+  top: 45rem;
+  left: 4.4rem;
+  width: 32.7rem;
+}
+.hero-cardbg img{
+/* border: 5px solid #000; */
+  position: relative;
+  z-index: 2;
+  top: -6rem;
+  left: -0.05rem;
+  width: 43rem;
+}
+.hero-card{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 73rem;
+}
+.hero-card-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+.hero-badge{
+  font-size: 1.7rem;
+  font-weight: var(--medium);
+  color: var(--white);
+  border-radius: 3rem;
+  border: 1.2px solid #B92027;
+  background: #B92027;
+  width: fit-content;
+  padding: 0.6rem 2.2rem;
+}
+.hero-card-sub{
+  font-family: 'SiwonhanSeolreim';
+  font-size: 3rem;
+  margin-top: 2.3rem;
+}
+.hero-card-title{
+  font-family: 'Cafe24ClassicType';
+  font-size: 4.4rem;
+  color: #B92027;
+  margin-bottom: 2.3rem;
+}
+.hero-review-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.hero-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38rem;
+  height: 10rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  border: 1px solid #B31F26;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.hero-review:nth-child(2){
+  width: 38rem;
+  height: 10rem;
+  border: 1px solid #B31F26;
+  margin: auto;
+  padding: 2.5rem;
+  /* gap: 4.5rem; */
+}
+.hero-review-text{
+  font-size: 1.4rem;
+  color: var(--default-color);
+  font-weight: var(--regular);
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.hero-review-img img{
+  width: 7.9rem;
+  margin: 0 1.3rem;
+}
+
+/* OTT */
+#ott{
+  font-family: 'SchoolSafetyRoundedSmile';
+  background-color: #1d1d1d;
+  color: #fff;
+  width: 100%;
+  height: 35rem;
+}
+.ott-title{
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 5.4rem 0 0 6rem;
+}
+.ott-title span{
+  color: var(--primary);
+}
+.ott-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.7rem;
+}
+.ott-card img{
+  width: 12rem;
+  /*height: 26.8rem;*/
+}
+
+/* 이번주 인기 모임 */
+.weekly{
+  /*border: 1px solid #000;*/
+  height: 76rem;
+  color: #291F12;
+  width: 100%;
+}
+.weekly-head{
+  margin-top: 6.4rem;
+  padding: 0 2.7rem;
+  height: 4.5rem;
+}
+.weekly2-head{
+  padding: 0 2.7rem;
+  height: 4.5rem;
+}
+.weekly-title{
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif;
+  font-size: 2rem;
+  font-weight: var(--bold);
+}
+.weekly-sub{
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+  margin-bottom: 3.6rem;
+}
+.weekly-list{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.6rem;
+  padding: 2.4rem 1.8rem 4rem 1.8rem;
+}
+.group-card{
+  width: 18.7rem;
+  height: 26rem;
+}
+.group-card img{
+  width: 100%;
+}
+.thumb{
+  position: relative;
+  z-index: 0;
+}
+.weekly-location{
+  position: absolute;
+  width: 5.9rem;
+  z-index: 1;
+  left: 1.4rem;
+  top: 14.1rem;
+}
+.card-txt{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 0.7rem;
+}
+.card-location{
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+.card-members{
+  font-size: 1.1rem;
+  color: var(--secondary);
+}
+.button2{
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.new-group-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.card2{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  width: 37.5rem;
+  margin-bottom: 2.9rem;
+  position: relative;
+  z-index: 0;
+}
+
+.aside{
+  position: relative;
+  z-index: 5;
+}
+.card-avatar{
+  /*border: 1px solid #000;*/
+  position:absolute;
+  width:8rem;
+  bottom: 0.1rem;
+  left: -10.8rem;
+  height: inherit;
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  z-index:4;
+}
+.card-avatar .card-icon{
+  display: flex;
+  gap: 0.1rem;
+  position: relative;
+}
+.card-avatar .card-icon li{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card-avatar .card-icon img{
+  width: 2.5rem;
+}
+.card-avatar.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.trigger {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  right: 0;
+  bottom: 0; 
+  cursor: pointer;
+  z-index: 2;
+}
+.trigger_btn{
+  /*border: 1px solid #000;*/
+  width: 60%;
+  height: 40%;
+  position: relative;
+  z-index: 3;
+}
+.trigger_btn span{
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary);
+  transition: 0.3s;
+}
+.trigger_btn span:nth-child(1){
+  top: 0.4rem;
+  left: 0.1rem;
+  rotate: 90deg;
+}
+.trigger_btn span:nth-child(2){
+  top: 0.4rem;
+  left: 0.1rem;
+}
+.trigger_btn.active span:nth-child(1){
+  top: 49%;transform: rotate(-45deg);
+  /* transform-origin: right bottom; */
+}
+.trigger_btn.active span:nth-child(2){top: 49%;transform: rotate(-45deg);}
+
+.add-to-wish{
+  position: absolute;
+  z-index: 1;
+  top: 8rem;
+  left: 1.1rem;
+}
+.add-to-wish img {
+  width: 2.4rem;
+  transition: transform .15s ease;
+}
+.add-to-wish:active img {
+  transform: scale(0.88);
+}
+.card2-txt{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 0.3rem;
+}
+.card2-tags{
+  margin-bottom: 0.8rem;
+}
+.card-badge{
+  font-size: 1.1rem;
+  color: var(--primary);
+  background: var(--primary-sub);
+  padding: 0.3rem 0.7rem;
+}
+.card-title{
+  width: 120%;
+}
+.card-sub-title{
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+  width: 120%;
+}
+.card-member{
+  font-size: 1.6rem;
+  font-weight: var(--medium);
+  color: #7B3AEB;
+}
+.card2-img img{
+  width: 14.4rem;
+}
+
+/* more 버튼 */
+.btn-more img{
+  /* border: 1px solid #000; */
+  height: fit-content;
+  margin-top: 11.9rem;
+  width: 2.6rem;
+}
+.card-review{
+  font-size: 1.6rem;
+  font-weight: var(--medium);
+  color: #7B3AEB;
+}
 
 /* ------------footer */
 .site-footer{
@@ -492,3 +920,4 @@
   font-size: 1.1rem;
   padding-bottom: 3rem;
 }
+>>>>>>> Stashed changes
