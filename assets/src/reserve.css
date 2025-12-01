@@ -1,0 +1,346 @@
+.container{width: 100%;background-color: var(--light-gray1);}
+/* reserve-sec 공통 */
+.reserve-sec{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* sec-title 공통 */
+.sec-title{
+  font-size: 1.6rem;
+  font-weight: var(--medium);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.essen{color: var(--primary);}
+
+/* sec-contents 공통 */
+.sec-contents{padding: 0rem 2rem 2rem;}
+.sec-contents div{
+  font-size: 1.5rem;
+  font-weight: var(--medium);
+  margin-bottom: 1.5rem;
+}
+.sec-contents .text-box{
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.1rem solid #dedede;
+  font-size: 1.3rem;
+  font-weight: var(--regular);
+  text-indent: 1rem;
+}
+.sec-contents input::placeholder{color: #939393;}
+
+/* icon */
+.icon20{width: 2rem;height: 2rem;}
+.icon25{width: 2.5rem;height: 2.5rem;}
+
+/* top-bar_______________________________________________________________ */
+.top-bar{
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--white);
+  border-bottom: 0.1rem solid var(--light-gray2);
+  z-index: 10;
+}
+.top-bar .prev-btn{
+  position: absolute;
+  top: 1.2rem;
+  left: 1.5rem;
+}
+.top-bar .prev-btn img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.top-bar .top-tit{
+  font-size: 1.8rem;
+  font-weight: var(--medium);
+  line-height: 5rem;
+  text-align: center;
+}
+
+.empty{height: 6rem;}
+
+/* class-card________________________________________________ */
+.card-wrap{
+  width: 100%;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+.class-card{
+  width: 100%;
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.6rem 1.2rem;
+}
+.class-img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(/image/csy/class.png) no-repeat center/cover;
+}
+.class-text{width: 70%;}
+.class-place{
+  font-size: 1.3rem;
+  color: var(--dark-gray);
+}
+.class-title{
+  font-size: 1.4rem;
+  font-weight: var(--medium);
+  margin-bottom: 1rem;
+}
+.class-price{
+  font-size: 1.6rem;
+  text-align: end;
+}
+.class-price span{
+  font-weight: var(--medium);
+  color: var(--primary);
+}
+
+/* reserve-s2________________________________________________ */
+/* 숫자증감 */
+.reserve-s2 .sec-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.qty-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.qty{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  height: 4rem;
+  border: 0.1rem solid #dedede;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.qty button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.qty input{
+  text-align: center;
+  width: 4rem;
+  font-size: 2rem;
+  font-weight: var(--semibold);
+}
+.plus{background-color: #fff;}
+.qty.kid .minus{background-color: #ddd;opacity: 0.5;}
+.minus img,
+.plus img{width: 4rem; height: 4rem;}
+.minus:active,
+.plus:active{filter: brightness(0.9);}
+
+/* reserve-s3________________________________________________ */
+.reserve-s3{
+  height: 37rem;
+  overflow: hidden;
+}
+
+/* radio */
+.date-radio{
+  width: 70rem;
+  display: flex;
+  gap: 1rem;
+}
+.date-radio input{display: none;}
+.date-radio label{
+  width: 5.5rem !important;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: var(--black);
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.date-radio label span{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.date-radio input:checked+label {
+  background: rgba(255, 49, 100, 1);
+  color: var(--white);
+}
+.radio{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.radio input{display: none;}
+.radio label{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 0.1rem solid #dedede;
+  color: var(--black);
+  font-size: var(--defaut-fz);
+  position: relative;
+  border-radius: 1rem;
+}
+.radio input:checked+label {
+  background: rgba(255, 49, 100, 0.7);
+  color: var(--white);
+}
+
+/* Tab */
+.tab-container{width: 100%;padding: 0 2.5rem;}
+
+.tab-menu{padding: 3rem 0 2rem;}
+.btn{
+  display: flex;
+  gap: 1rem;
+}
+.btn li{
+  width: 6rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #dedede;
+  color: #939393;
+  text-align: center;
+  cursor: pointer;
+  line-height: 3.2rem;
+}
+.btn li:hover{color: var(--primary);}
+.btn li.active{
+  background-color: #fff;
+  border: 0.1rem solid var(--primary);
+  color: var(--primary);
+}
+
+.tab-contents{
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.tab-contents>div{display: none;}  
+.tab-contents>div.active{display: block;}
+
+/* swiper */
+.swiper-container{
+  position: relative;
+  height: 6rem;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.date-radio>.swiper-slide:nth-of-type(1){margin-left: 2.5rem;}
+
+/* reserve-s4_____________________________________________ */
+
+/* select box */
+.select_cus {position: relative;width: 100%;}
+.select_cus .trigger{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.1rem solid #dedede;
+  cursor: pointer;
+}
+.select_cus .trigger:after{
+  content:'';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background:url('/image/csy/arrow-down-icon.svg') center/contain no-repeat;
+  transform:scaleY(1) translateY(-50%);
+}
+.select_cus.active .trigger:after {transform:scaleY(-1) translateY(50%);}
+.select_cus .trigger_txt{
+  font-size: 1.3rem;
+  font-weight: var(--regular);
+  color: #939393;
+  text-indent: 1rem;
+}
+.select_cus.select .trigger_txt {color: var(--default-color);}
+.select_cus .option {display: none;position: absolute;top: calc(100% - 1px);width: 100%;max-height: 20rem;background: #fff;border: 0.1rem solid #D9D9D9;z-index: 1;overflow-y: auto;}
+.select_cus .option > li{
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--regular);
+  color: var(--default-color);
+  cursor: pointer;
+}
+.select_cus .option > li:hover {background: var(--light-gray1);}
+
+/* button_________________________________________________________ */
+.full-btn{
+  background-color: #fff;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.5rem;
+  margin-bottom: 6rem;
+}
+.full-btn .button2{
+  width: 100%;
+  height: 5rem;
+  position: relative;
+}
+.full-btn .button2 a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 5rem;
+}
+.button2:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  $(".btn").click(function () {
+  $(".btn").click(function (e) {
+    e.preventDefault();
     $(this).toggleClass("active");
 
     if ($(this).hasClass("active")) {
@@ -37,6 +38,20 @@ $(document).ready(function(){
       parentLi.addClass("open");
       parentLi.find(".sub").stop(true, true).slideDown();
     }
+  });
+
+  /* 이동시 메뉴닫기 */
+  $("aside").on("click", "a[data-link]", function () {
+    // 1. 햄버거 버튼 모션 초기화
+    $(".btn").removeClass("active");
+    
+    // 2. 메뉴와 배경 숨기기 (fadeOut 사용!)
+    $("aside").fadeOut();
+    $(".back").fadeOut();
+
+    // 3. 열려있던 서브메뉴들도 초기화
+    $(".sub").slideUp();
+    $(".main").removeClass("open");
   });
   
 });
