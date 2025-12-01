@@ -25,7 +25,7 @@ $(document).ready(function () {
 document.querySelectorAll('.swipers').forEach(function(elem) {
   new Swiper(elem, {
     slidesPerView: 3,
-    spaceBetween: -50,
+    spaceBetween: -10,
     freeMode: true,
   });
 });
