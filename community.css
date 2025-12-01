@@ -82,36 +82,6 @@
   z-index: 0;
 }
 
-/*
-.sparkle {
-  position: absolute;
-  width: 5.2rem;
-  height: 7rem;
-  background: url("../image/community/sparkle-2.png") no-repeat center;
-  opacity: 0;
-  animation: sparkleTwinkle 2.2s infinite ease-in-out;
-  z-index: 5;
-}
-
-.sparkle-1 {
-  top: 15%;
-  left: 12%;
-  animation-delay: 0s;
-}
-
-.sparkle-2 {
-  top: 26%;
-  right: 14%;
-  animation-delay: 0.9s;
-}
-
-@keyframes sparkleTwinkle {
-  0%   { opacity: 0;   transform: scale(0.8); }
-  40%  { opacity: .9;  transform: scale(1);   }
-  60%  { opacity: .3;  transform: scale(.9);  }
-  100% { opacity: 0;   transform: scale(0.8); }
-}*/
-
 .hero-bg img{
   width: 100%;
   position: relative;
@@ -129,11 +99,12 @@
   width: 32.7rem;
 }
 .hero-cardbg img{
+/* border: 5px solid #000; */
   position: relative;
   z-index: 2;
   top: -6rem;
-  left: -1.5rem;
-  width: 46rem;
+  left: -0.05rem;
+  width: 43rem;
 }
 .hero-card{
   position: absolute;
@@ -199,9 +170,6 @@
   font-weight: var(--regular);
   line-height: normal;
   letter-spacing: -0.4px;
-}
-.hero-review-text:nth-child(2){
-
 }
 .hero-review-img img{
   width: 7.9rem;
@@ -330,14 +298,14 @@
 .card-avatar{
   /*border: 1px solid #000;*/
   position:absolute;
-   width:8rem;
+  width:8rem;
   bottom: 0.1rem;
   left: -10.8rem;
   height: inherit;
   opacity: 0;
   transform: translateX(20px);
   pointer-events: none;
-   z-index:4;
+  z-index:4;
 }
 .card-avatar .card-icon{
   display: flex;
@@ -361,7 +329,7 @@
 .trigger {
   width: 2.7rem;
   height: 2.7rem;
-   margin: auto;
+  margin: auto;
   background-color: #fff;
   border: 2px solid var(--primary);
   border-radius: 50%;
@@ -370,7 +338,7 @@
   align-items: center;
   position:absolute;
   right: 0;
-   bottom: 0; 
+  bottom: 0; 
   cursor: pointer;
   z-index: 2;
 }
@@ -461,8 +429,6 @@
   font-weight: var(--medium);
   color: #7B3AEB;
 }
-
-
 
 /* ------------footer */
 .site-footer{
