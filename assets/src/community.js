@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <<<<<<< Updated upstream
 
 $(document).ready(function () {
@@ -74,6 +76,7 @@ $(".trigger_btn").click(function () {
 
 });
 =======
+>>>>>>> d5060a70762a72065efbe08929f2e60390d62b74
 
 $(document).ready(function () {
   $(".popular .new-group-list .card2").hide().slice(0, 3).show();
@@ -148,4 +151,7 @@ $(".trigger_btn").click(function () {
 
 
 });
+<<<<<<< HEAD
+=======
 >>>>>>> Stashed changes
+>>>>>>> d5060a70762a72065efbe08929f2e60390d62b74

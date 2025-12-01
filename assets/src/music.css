@@ -6,6 +6,9 @@
   align-items: center; 
   padding: 0 2.2rem;
   border-bottom: 1.5px solid #EDEDED;
+  position:fixed;
+  z-index: 5;
+  background-color: #fff;
 }
 .bar a img{ 
   display: block;
@@ -20,6 +23,7 @@
   width: 3rem;
   height: 3rem;
 }
+.category-wrap{padding-top: 5rem;}
 .category-content{
   width: 100%;
   background:linear-gradient(var(--primary-sub),var(--white),var(--primary-sub));
@@ -124,7 +128,7 @@
   gap: 0.5rem;
   font-size: 1.4rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
 .card .card-inner .card-txt .text-inner h6{
   color: var(--primary);
