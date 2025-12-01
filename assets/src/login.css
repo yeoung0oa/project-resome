@@ -3,7 +3,7 @@
 
 #wrap{
   width: 100%;
-  padding: 1.2rem;
+  padding: 0 1.5rem;
   background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
 }
 .header-top {
@@ -144,6 +144,7 @@
 
 .log-footer img{
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 
