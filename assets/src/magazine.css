@@ -1,14 +1,15 @@
 .top{
-  width: 64rem;
-  height: 7.4rem;
+  width: 100%;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  padding: 0 2.2rem;
+  padding: 0 1.5rem;
   border-bottom: 1.5px solid #EDEDED;
 }
+.top img{width: 3rem;}
 .top p{
-  font-size: 2.6rem;
+  font-size: 1.8rem;
   font-weight: var(--medium);
 }
 .top div{
@@ -16,20 +17,20 @@
   height: 4.4rem;
 }
 .magazine-containter {
-  width: 64rem;
-  margin-top: 4.4rem;
-  padding: 0 2.2rem;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 0 1.5rem;
 }
 #select{
-  padding: 8px 20px;
-  font-size: 1.9rem;
+  padding: 8px 12px;
+  font-size: 1.3rem;
   border-radius: 0.7rem;
   border: 1px solid #ccc;
 }
-.magazine{margin-top: 4.4rem;}
+.magazine{margin-top: 4rem;}
 .magazine-card{
-  width: 59.5rem;
-  height: 52.1rem;
+  width: 100%;
+  height: 35rem;
   background-color: var(--light-gray1);
   border-radius: 3rem;
   overflow: hidden;
@@ -44,7 +45,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.magazine-txt {padding: 2rem 2rem;}
+.magazine-txt {padding: 1.5rem;}
 .magazine-txt-top{
   display: flex;
   justify-content: space-between;
@@ -52,31 +53,36 @@
 .magazine-txt-left{
   display: flex;
   font-weight: var(--medium);
-  column-gap: 2.2rem;
+  column-gap: 1.5rem;
   align-items: center;
 }
 .magazine-txt-left p{
+  font-size: 1.4rem;
   padding: 0.7rem 1.4rem;
   border-radius: 3rem;
   background-color: var(--primary);
   color: #fff;
 }
-.magazine-txt-left span{color: var(--dark-gray);}
+.magazine-txt-left span{
+  color: var(--dark-gray);
+  font-size: 1.4rem;
+}
 .magazine-txt-bottom{
-  margin-top: 3rem;
+  margin-top: 1rem;
   position: relative;
 }
 .magazine-txt-bottom > p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: var(--bold);
 }
 .magazine-txt-tag {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
-  column-gap: 1.2rem;
+  column-gap: 0.8rem;
   font-weight: var(--medium);
   color: var(--dark-gray);
 }
+.magazine-txt-tag p{font-size: 1.3rem}
 .magazine-sns{
   position: absolute;
   top: 0rem;
@@ -102,8 +108,8 @@
 .sns-btn:nth-child(2) { z-index: 2; }
 .sns-btn:nth-child(3) { z-index: 1; }
 .trigger{
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
   z-index: 3;
 }
@@ -114,8 +120,8 @@
 }
 .trigger_btn span{
   position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
   background-color: #333;
   border-radius: 50%;
   right:1rem;
@@ -126,7 +132,7 @@
 .trigger_btn span:nth-child(3){top: 60%;}
 
 .magazine-img{
-  width: 59.5rem;
+  width: 100%;
   height: 30rem;
 }
 .magazine-img img{
@@ -161,28 +167,29 @@
 
 /* footer____________________________________ */
 .site-footer{
-  width: 64rem;
+  width: 100%;
   height: 100%;
   color: #4E4E4E;
   background-color: #FDEDF3;
-  padding-bottom: 5rem;
-  margin-top: 10rem;
+  padding-bottom: 3rem;
+  margin-top: 6rem;
 }
-.footer-inner{padding: 3rem;}
+.footer-inner{padding: 1.5rem;}
 .footer-name{
-  padding: 2.5rem 0;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
   font-weight: var(--medium);
 }
 .site-footer p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   padding: 1rem 0;
 }
 .footer-desc{
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .copy{
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   padding-bottom: 3rem;
 }
