@@ -4,7 +4,7 @@
 /* 전체 레이아웃 */
 #wrap {
   width: 100%;
-  padding: 0 1.5rem;
+  margin: 0 auto;
   background-color: var(--white);
 }
 
