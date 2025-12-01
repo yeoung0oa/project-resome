@@ -1,4 +1,9 @@
-.container{width: 100%;background-color: var(--light-gray1);}
+.container{
+  width: 100%;
+  background-color: var(--light-gray1);
+  height: max-content;
+  overflow: hidden;
+}
 /* reserve-sec 공통 */
 .reserve-sec{
   width: 100%;
