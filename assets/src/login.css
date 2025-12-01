@@ -3,7 +3,7 @@
 
 #wrap{
   width: 100%;
-  padding: 0 1.5rem;
+  margin: 0 auto;
   background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
 }
 .header-top {
