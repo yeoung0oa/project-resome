@@ -1,0 +1,150 @@
+
+
+
+#wrap{
+  width: 100%;
+  padding-bottom: 0 2rem;
+  background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
+}
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 7.4rem;
+  padding: 1.9rem;
+}
+.log-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.log-inner img{
+  display: flex;
+  margin-top: 9rem;
+  margin-bottom: 8.5rem;
+  width: 30rem;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.login :is(input[type=text],input[type=password]){
+  border: 1px solid #FF3164;
+  display: inline-block;
+  width: 40rem;
+  height: 6.2rem;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 2rem center;
+  background-size: 2.5rem;
+  border-radius: 7.4rem;
+  color: var(--dark-gray);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
+  text-indent: 6.5rem;
+}
+
+.login input[type=text]{background-image: url(../image/joeun/id.svg);}
+.login input[type=password]{background-image: url(../image/joeun/pw.svg);}
+
+.login_radio{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: -60%;
+}
+
+.loginMid{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+}
+.loginMid button{
+  background-color: var(--default-color);
+  color: var(--white);
+  width: 25rem;
+  height: 5.1rem;
+  border-radius: 7.4rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+  transition: 0.3s;
+}
+.loginMid button:hover{
+  background-color: var(--primary);
+  color: var(--white);
+}
+.loginMid ul.check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginMid ul.check li{
+  font-size: 1.5rem;
+  font-weight: var(--medium);
+  color: #838383;
+  margin-top: 0.5rem;
+}
+.loginMid ul.check li a{
+  font-size: 1.5rem;
+  font-weight: var(--medium);
+  color: royalblue;
+  margin-left: 0.7rem;
+  text-decoration: underline;
+}
+.snsLog{
+  position: relative;
+  display: flex;
+  width: 52rem;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem auto;
+}
+.snsLog span{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.snsLog span:after,
+.snsLog span:before{
+  content: '';
+  margin: 0.5rem 3rem;
+  display: inline-block;
+  width: 16rem;
+  border: 0.1rem solid var(--secondary-sub);
+}
+.snsLog span:after{
+  margin-right: 1rem;
+}
+.snsLog span:before{
+  margin-left: 1rem;
+}
+.snsLog img{
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: 5rem;
+  margin-top: 10rem;
+}
+
+.log-footer img{
+  width: 100%;
+}
+
+
+
