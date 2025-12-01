@@ -1,96 +1,107 @@
-.container{width: 64rem;background-color: var(--light-gray1);}
+.container{width: 100%;background-color: var(--light-gray1);}
 /* reserve-sec 공통 */
 .reserve-sec{
-  width: 64rem;
+  width: 100%;
   background-color: #fff;
-  border-radius: 1rem;
-  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 /* sec-title 공통 */
 .sec-title{
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: var(--medium);
-  padding: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 .essen{color: var(--primary);}
 
 /* sec-contents 공통 */
-.sec-contents{padding: 1.5rem 3.5rem 3rem;}
+.sec-contents{padding: 0rem 2rem 2rem;}
 .sec-contents div{
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: var(--medium);
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 .sec-contents .text-box{
-  width: 56.6rem;
-  height: 6rem;
-  border-radius: 0.7rem;
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   border: 0.1rem solid #dedede;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: var(--regular);
-  text-indent: 1.5rem;
+  text-indent: 1rem;
 }
 .sec-contents input::placeholder{color: #939393;}
 
+/* icon */
+.icon20{width: 2rem;height: 2rem;}
+.icon25{width: 2.5rem;height: 2.5rem;}
 
 /* top-bar_______________________________________________________________ */
 .top-bar{
   position: fixed;
-  width: 64rem;
-  height: 7.4rem;
+  width: 100%;
+  height: 5rem;
   background-color: var(--white);
   border-bottom: 0.1rem solid var(--light-gray2);
-  z-index: 100;
+  z-index: 10;
 }
 .top-bar .prev-btn{
   position: absolute;
-  top: 2.2rem;
-  left: 2.2rem;
+  top: 1.2rem;
+  left: 1.5rem;
+}
+.top-bar .prev-btn img{
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .top-bar .top-tit{
-  font-size: 2.6rem;
+  font-size: 1.8rem;
   font-weight: var(--medium);
-  line-height: 7.5rem;
+  line-height: 5rem;
   text-align: center;
 }
 
-.empty{height: 9rem;}
+.empty{height: 6rem;}
 
 /* class-card________________________________________________ */
+.card-wrap{
+  width: 100%;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
 .class-card{
-  width: 60rem;
-  height: 20rem;
-  border-radius: 3rem;
+  width: 100%;
+  border-radius: 2rem;
   background: #fff;
-  box-shadow: 0 0 0.7rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 1.8rem;
-  margin-left: 2.23rem;
-  margin-bottom: 1.5rem;
-  
+  gap: 1.2rem;
+  padding: 1.6rem 1.2rem;
 }
 .class-img{
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   overflow: hidden;
   background: url(/image/csy/class.png) no-repeat center/cover;
 }
-.class-text{max-width: 39rem;}
+.class-text{width: 70%;}
 .class-place{
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   color: var(--dark-gray);
 }
 .class-title{
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: var(--medium);
-  margin: 1.5rem 0 3rem;
+  margin-bottom: 1rem;
 }
 .class-price{
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   text-align: end;
 }
 .class-price span{
@@ -104,23 +115,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12rem;
+  gap: 8rem;
 }
 .qty-wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.2rem;
+  gap: 1.5rem;
 }
 .qty{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18rem;
-  height: 6rem;
+  width: 12rem;
+  height: 4rem;
   border: 0.1rem solid #dedede;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 .qty button{
@@ -131,41 +142,46 @@
 }
 .qty input{
   text-align: center;
-  width: 6rem;
-  font-size: 3rem;
+  width: 4rem;
+  font-size: 2rem;
   font-weight: var(--semibold);
 }
+.plus{background-color: #fff;}
 .qty.kid .minus{background-color: #ddd;opacity: 0.5;}
+.minus img,
+.plus img{width: 4rem; height: 4rem;}
+.minus:active,
+.plus:active{filter: brightness(0.9);}
 
 /* reserve-s3________________________________________________ */
 .reserve-s3{
-  height: 58.6rem;
+  height: 37rem;
   overflow: hidden;
 }
 
 /* radio */
 .date-radio{
-  width: 100rem;
+  width: 70rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .date-radio input{display: none;}
 .date-radio label{
-  width: 8rem !important;
-  height: 9rem;
+  width: 5.5rem !important;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #fff;
   color: var(--black);
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   position: relative;
 }
 .date-radio label span{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .date-radio input:checked+label {
@@ -173,15 +189,14 @@
   color: var(--white);
 }
 .radio{
-  width: 56.5rem;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .radio input{display: none;}
 .radio label{
-  width: 13rem;
-  height: 6.3rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +205,7 @@
   color: var(--black);
   font-size: var(--defaut-fz);
   position: relative;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
 }
 .radio input:checked+label {
   background: rgba(255, 49, 100, 0.7);
@@ -198,23 +213,23 @@
 }
 
 /* Tab */
-.tab-container{width: 64rem;margin-left: 3.7rem;}
+.tab-container{width: 100%;padding: 0 2.5rem;}
 
-.tab-menu{padding: 4.5rem 0 2.5rem;}
+.tab-menu{padding: 3rem 0 2rem;}
 .btn{
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .btn li{
-  width: 8.6rem;
-  height: 4.8rem;
-  border-radius: 0.7rem;
+  width: 6rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
   background-color: #fff;
   border: 0.1rem solid #dedede;
   color: #939393;
   text-align: center;
-  padding: 0.5rem;
   cursor: pointer;
+  line-height: 3.2rem;
 }
 .btn li:hover{color: var(--primary);}
 .btn li.active{
@@ -225,7 +240,6 @@
 
 .tab-contents{
   background-color: #fff;
-  /* padding: 2.5rem 0; */
   box-sizing: border-box;
 }
 .tab-contents>div{display: none;}  
@@ -234,7 +248,7 @@
 /* swiper */
 .swiper-container{
   position: relative;
-  height: 9.5rem;
+  height: 6rem;
 }
 .swiper {
   width: 100%;
@@ -245,22 +259,22 @@
   font-size: 18px;
   background: #444;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
-.date-radio>.swiper-slide:nth-of-type(1){margin-left: 3.5rem;}
+.date-radio>.swiper-slide:nth-of-type(1){margin-left: 2.5rem;}
 
 /* reserve-s4_____________________________________________ */
 
 /* select box */
-.select_cus {position: relative;width: 56.6rem;}
+.select_cus {position: relative;width: 100%;}
 .select_cus .trigger{
   display: flex;
   align-items: center;
   position: relative;
-  width: 56.6rem;
-  height: 6rem;
-  border-radius: 0.7rem;
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   border: 0.1rem solid #dedede;
   cursor: pointer;
@@ -269,26 +283,25 @@
   content:'';
   position: absolute;
   top: 50%;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  background:url('/image/csy/arrow-down-icon.svg') center center no-repeat;background-size: contain;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background:url('/image/csy/arrow-down-icon.svg') center/contain no-repeat;
   transform:scaleY(1) translateY(-50%);
 }
 .select_cus.active .trigger:after {transform:scaleY(-1) translateY(50%);}
 .select_cus .trigger_txt{
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: var(--regular);
   color: #939393;
-  text-indent: 1.5rem;
+  text-indent: 1rem;
 }
 .select_cus.select .trigger_txt {color: var(--default-color);}
-.select_cus .option {display: none;position: absolute;top: calc(100% - 1px);width: 100%;max-height: 203px;background: #fff;border: 0.1rem solid #D9D9D9;z-index: 1;overflow-y: auto;}
+.select_cus .option {display: none;position: absolute;top: calc(100% - 1px);width: 100%;max-height: 20rem;background: #fff;border: 0.1rem solid #D9D9D9;z-index: 1;overflow-y: auto;}
 .select_cus .option > li{
-  padding: 1.2rem 1.6rem;
-  font-size: 1.8rem;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
   font-weight: var(--regular);
-  line-height: 1.3;
   color: var(--default-color);
   cursor: pointer;
 }
@@ -297,25 +310,30 @@
 /* button_________________________________________________________ */
 .full-btn{
   background-color: #fff;
-  width: 64rem;
-  height: 13.4rem;
+  width: 100%;
+  height: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 3.5rem;
+  margin-bottom: 6rem;
 }
 .full-btn .button2{
-  width: 53.6rem;
-  height: 7.5rem;
+  width: 100%;
+  height: 5rem;
   position: relative;
 }
 .full-btn .button2 a{
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 2.3rem;
-  line-height: 7.5rem;
+  font-size: 1.6rem;
+  line-height: 5rem;
 }
-
+.button2:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 
 

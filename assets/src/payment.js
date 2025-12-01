@@ -73,3 +73,21 @@ $(document).ready(function () {
   });
 
 });
+
+// 버튼 활성화
+$(document).ready(function () {
+  const $btn = $('.button2');
+  const $check2 = $('#check2');
+
+  function checkAgreement() {
+    if ($check2.is(':checked')) {
+      $btn.prop('disabled', false).addClass('active');
+    } else {
+      $btn.prop('disabled', true).removeClass('active');
+    }
+  }
+
+  $check2.on('change', checkAgreement);
+
+  checkAgreement();
+});
