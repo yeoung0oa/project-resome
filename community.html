@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커뮤니티</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/community.css">
+</head>
+
+<body>
+<section class="community">
+  <div class="community-wrap">
+    <div class="community-header">
+      <a data-link href="/" class="btn-back">
+        <img src="image/community/left_arrow.png" alt="back">
+      </a>
+      <p class="community-title">찾았다! 내 취향 메이트</p>
+      <button class="btn-wish" type="button" aria-label="관심 커뮤니티">
+        <img src="image/community/wishlist_3.png" alt="위시리스트">
+      </button>
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="app-main">
+      <section class="view view-home is-active" data-view="home">
+
+        <!-- 히어로 영역 -->
+        <section class="hero">
+          <div class="hero-inner">
+            <div class="hero-head">
+              <p class="badge hero-eyebrow">리솜 취미모임</p>
+              <p class="hero-kicker">같은 취향, 더 깊은 이야기</p>
+              <h2 class="hero-title">와인 커뮤니티</h2>
+            </div>
+
+            <!-- 메인 비주얼 이미지 레이어 -->
+            <div class="hero-visual">
+              <div class="sparkle sparkle-1"></div>
+              <div class="sparkle sparkle-2"></div>
+              <div class="hero-bg">
+                <img src="image/community/snow.png" alt="눈꽃 배경">
+              </div>
+
+              <div class="hero-window">
+                <img src="image/community/kv-window.png" alt="창문">
+              </div>
+
+              <div class="hero-character">
+                <img src="image/community/kv-character.png" alt="캐릭터">
+              </div>
+
+              <div class="hero-cardbg">
+                <img src="image/community/kv-cardbg.png" alt="카드">
+              </div>
+            </div>
+
+            <!-- 메인 비주얼 카드영역 내용 -->
+            <section class="hero-card">
+              <div class="hero-card-head">
+                <p class="hero-badge">연말 추천 취미모임</p>
+                <p class="hero-card-sub">와인과 함께하는</p>
+                <h3 class="hero-card-title">낭만적인 시간</h3>
+              </div>
+
+              <!-- 후기 리스트 (이미지/텍스트 슬롯) -->
+              <ul class="hero-review-list">
+                <li class="hero-review">
+                  <div class="hero-review-img">
+                    <img src="image/community/r1.png" alt="후기 이미지 1">
+                  </div>
+                  <p class="hero-review-text">
+                    “와인을 잘 모르는데도 분위기가 너무 편안<br>해서 좋았어요.
+                    초보자도 부담 없이 즐길 수<br> 있는 모임으로 추천해요!”
+                  </p>
+                </li>
+
+                <li class="hero-review">
+                  <p class="hero-review-text">
+                    “일 끝나고 가벼운 마음으로 갔는데 생각보다 너무 힐링됐어요..”
+                  </p>
+                  <div class="hero-review-img">
+                    <img src="image/community/r2.png" alt="후기 이미지 2">
+                  </div>
+                </li>
+
+                <li class="hero-review">
+                  <div class="hero-review-img">
+                    <img src="image/community/r3.png" alt="후기 이미지 3">
+                  </div>
+                  <p class="hero-review-text">
+                    “와인보다 사람들과의 대화가 더 즐거웠던<br> 시간이었어요.
+                    편안하게 웃다 보니 하루 피<br>로가 싹 풀리더라구요.”
+                  </p>
+                </li>
+              </ul>
+            </section>
+
+          </div>
+        </section>
+
+        <!-- 와인 OTT 추천 -->
+        <section class="ott" id="ott">
+          <h3 class="ott-title">
+            와인 OTT 추천 <span class="highlight">BEST3</span>
+          </h3>
+          <ul class="ott-list">
+            <li class="ott-card">
+              <a href="https://watcha.com/contents/mOPVAkX?search_id=24dce558-8c07-47f6-aee1-b309a07de1a9" class="ott-thumb">
+                <img src="image/community/movie1.png" alt="와인 OTT 1">
+              </a>
+            </li>
+            <li class="ott-card">
+              <a href="https://watcha.com/contents/m5XMKQ4?search_id=24dce558-8c07-47f6-aee1-b309a07de1a9" class="ott-thumb">
+                <img src="image/community/movie2.png" alt="와인 OTT 2">
+              </a>
+            </li>
+            <li class="ott-card">
+              <a href="https://watcha.com/contents/m5GXz42?search_id=370c7f56-331f-4a6d-8eeb-e7862402918a" class="ott-thumb">
+                <img src="image/community/movie3.png" alt="와인 OTT 3">
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 요번주 인기 모임 -->
+        <section class="weekly">
+          <div class="weekly-head">
+            <h3 class="weekly-title">요번주 인기 모임</h3>
+            <p class="weekly-sub">와인러버들이 선택한 인기모임🍷</p>
+          </div>
+
+          <ul class="weekly-list">
+            <li class="group-card js-open-detail">
+              <a href="#none" class="group-card-inner">
+                <div class="thumb">
+                  <img src="image/community/week_best1.png" alt="한잔으로 시작하는 와인 취향 수업">
+                  <span class="weekly-location">
+                    <img src="image/community/location-01.png" alt="">
+                  </span>
+                </div>
+                <div class="card-txt">
+                  <p class="card-location">1회 모임 · 강남구 반포동</p>
+                  <p class="card-title">한잔으로 시작하는<br>와인 취향 수업</p>
+                  <p class="card-members">멤버 24</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="group-card js-open-detail">
+              <a href="#none" class="group-card-inner">
+                <div class="thumb">
+                  <img src="image/community/week_best2.png" alt="2030 와인 사교모임 [위드와인]">
+                  <span class="weekly-location">
+                    <img src="image/community/location-02.png" alt="">
+                  </span>                  
+                </div>
+                <div class="card-txt">
+                  <p class="card-location">3회 모임 · 마포구 서교동</p>
+                  <p class="card-title">2030 와인 사교모임<br>[위드와인]</p>
+                  <p class="card-members">멤버 73</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="group-card js-open-detail">
+              <a href="#none" class="group-card-inner">
+                <div class="thumb">
+                  <img src="image/community/week_best3.png" alt="영화 속 와인/위스키">
+                  <span class="weekly-location">
+                    <img src="image/community/location-03.png" alt="">
+                  </span>                  
+                </div>
+                <div class="card-txt">
+                  <p class="card-location">7회 모임 · 용산구 이촌동</p>
+                  <p class="card-title">영화 속<br>와인/위스키</p>
+                  <p class="card-members">멤버 89</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="group-card js-open-detail">
+              <a href="#none" class="group-card-inner">
+                <div class="thumb">
+                  <img src="image/community/week_best4.png" alt="Beyond Wine&Dine">
+                  <span class="weekly-location">
+                    <img src="image/community/location-02.png" alt="">
+                  </span>        
+                </div>
+                <div class="card-txt">
+                  <p class="card-location">4회 모임 · 마포구 대흥동</p>
+                  <p class="card-title">Beyond<br>Wine&amp;Dine</p>
+                  <p class="card-members">멤버 63</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <button class="button2 btn-view-more js-scroll-target" type="button" data-target="nearby">
+            더 많은 모임 보러가기
+          </button>
+        </section>
+
+        <!-- 지금 인기있는 취미모임 -->
+        <section class="popular">
+          <div class="weekly2-head">
+            <h3 class="weekly-title">지금 인기 있는 취미 모임</h3>
+            <p class="weekly-sub">관심 지역 인기모임 찜하기</p>
+          </div>
+
+          <ul class="new-group-list">
+            <!-- 카드 1 -->
+            <li class="card2 new-group-card js-open-detail">
+              <div class="card2-img">
+                <img src="image/community/hobby-1.png" alt="등산1">
+              </div>
+              <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>              
+              <div class="card2-txt">
+                <div class="card2-tags">
+                  <span class="card-badge">은평구</span>
+                  <span class="card-badge">아웃도어/여행</span>
+                </div>
+                <p class="card-title">더 마운틴 The Mountain</p>
+                <p class="card-sub-title">쿨하게 산 타실 분들만🏔️</p>
+                <span class="card-members">멤버 117</span>
+              </div>
+              <div class="aside">
+                <div class="card-avatar">
+                  <ul class="card-icon">
+                    <li class="icon1"><img src="image/community/people-28.png" alt=""></li>
+                    <li class="icon2"><img src="image/community/people-29.png" alt=""></li>
+                    <li class="icon3"><img src="image/community/people-30.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+
+            <!-- 카드 2 -->
+            <li class="card2 new-group-card js-open-detail">
+              <div class="card2-img">
+                <img src="image/community/hobby-2.png" alt="등산2">
+              </div>
+              <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+              <div class="card2-txt">
+                <div class="card2-tags">
+                  <span class="card-badge">서초구</span>
+                  <span class="card-badge">아웃도어/여행</span>
+                </div>
+                <p class="card-title">걷는 사람들</p>
+                <p class="card-sub-title">건강한 몸, 따뜻한 마음, 긍정적인 생각</p>
+                <span class="card-members">멤버 91</span>
+              </div>
+              <div class="aside">
+                <div class="card-avatar">
+                  <ul class="card-icon">
+                    <li class="icon1"><img src="image/community/people-25.png" alt=""></li>
+                    <li class="icon2"><img src="image/community/people-26.png" alt=""></li>
+                    <li class="icon3"><img src="image/community/people-27.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+
+            <!-- 카드 3 -->
+            <li class="card2 new-group-card js-open-detail">
+              <div class="card2-img">
+                <img src="image/community/hobby-3.png" alt="사진">
+              </div>
+              <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+              <div class="card2-txt">
+                <div class="card2-tags">
+                  <span class="card-badge">종로구</span>
+                  <span class="card-badge">사진/영상</span>
+                </div>
+                <p class="card-title">경복궁 사진/영상 팀원 모집중!</p>
+                <p class="card-sub-title">사진/릴스 촬영 관심있는 분들 환영</p>
+                <span class="card-members">멤버 12</span>
+              </div>
+              <div class="aside">
+                <div class="card-avatar">
+                  <ul class="card-icon">
+                    <li class="icon1"><img src="image/community/people-22.png" alt=""></li>
+                    <li class="icon2"><img src="image/community/people-23.png" alt=""></li>
+                    <li class="icon3"><img src="image/community/people-24.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+
+            <!-- 카드 4 -->
+            <li class="card2 new-group-card js-open-detail">
+              <div class="card2-img">
+                <img src="image/community/hobby-4.png" alt="공예1">
+              </div>
+              <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+              <div class="card2-txt">
+                <div class="card2-tags">
+                  <span class="card-badge">종로구</span>
+                  <span class="card-badge">공예/만들기</span>
+                </div>
+                <p class="card-title">버킷리스트:곰손에서 금손까지!</p>
+                <p class="card-sub-title">다양한 분야의 재능러 모집!</p>
+                <span class="card-members">멤버 243</span>
+              </div>
+              <div class="aside">
+                <div class="card-avatar">
+                  <ul class="card-icon">
+                    <li class="icon1"><img src="image/community/people-19.png" alt=""></li>
+                    <li class="icon2"><img src="image/community/people-20.png" alt=""></li>
+                    <li class="icon3"><img src="image/community/people-21.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+
+            <!-- 카드 5 -->
+            <li class="card2 new-group-card js-open-detail">
+              <div class="card2-img">
+                <img src="image/community/hobby-5.png" alt="공예2">
+              </div>
+              <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+              <div class="card2-txt">
+                <div class="card2-tags">
+                  <span class="card-badge">종로구</span>
+                  <span class="card-badge">공예/만들기</span>
+                </div>
+                <p class="card-title">하고싶은게 많은 사람들</p>
+                <p class="card-sub-title">다양한 분야의 재능러 모집!</p>
+                <span class="card-members">멤버 91</span>
+              </div>
+              <div class="aside">
+                <div class="card-avatar">
+                  <ul class="card-icon">
+                    <li class="icon1"><img src="image/community/people-16.png" alt=""></li>
+                    <li class="icon2"><img src="image/community/people-17.png" alt=""></li>
+                    <li class="icon3"><img src="image/community/people-18.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="button2 btn-view-more" type="button">
+            더 많은 모임 보러가기
+          </button>
+        </section>
+
+      </section><!-- /view-home -->
+
+      <!-- 내 주변에 새로 생겼어요 -->
+      <section class="nearby" id="nearby-section">
+        <div class="weekly-head">
+          <h3 class="weekly-title">내 주변에 새로 생겼어요</h3>
+          <p class="weekly-sub">이번 주엔 어떤 모임이 새로 생겼을까요?</p>
+        </div>
+
+        <ul class="new-group-list">
+          <!-- 카드 1 -->
+          <li class="card2 new-group-card js-open-detail">
+            <div class="card2-img">
+              <img src="image/community/new1.png" alt="팔레트클럽(오일파스텔 소모임)">
+            </div>
+            <button class="add-to-wish">
+              <img src="image/community/hearticon.png" alt="wish icon">
+            </button>  
+            <div class="card2-txt">
+              <div class="card2-tags">
+                <span class="card-badge">강남구</span>
+                <span class="card-badge">공예/만들기</span>
+              </div>
+              <p class="card-title">팔레트클럽(오일파스텔 소모임)</p>
+              <p class="card-sub-title">♥️ 팔레트 클럽 ♥️</p>
+              <span class="card-members">멤버 1</span>
+            </div>
+            <div class="aside">
+              <div class="card-avatar">
+                <ul class="card-icon">
+                  <li class="icon1"><img src="image/community/people-1.png" alt=""></li>
+                  <li class="icon2"><img src="image/community/people-2.png" alt=""></li>
+                  <li class="icon3"><img src="image/community/people-3.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="trigger_btn">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 카드 2 -->
+          <li class="card2 new-group-card js-open-detail">
+            <div class="card2-img">
+              <img src="image/community/new2.png" alt="30Hikers(30인의 등산러들)">
+            </div>
+            <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+            <div class="card2-txt">
+              <div class="card2-tags">
+                <span class="card-badge">서대문구</span>
+                <span class="card-badge">아웃도어/여행</span>
+              </div>
+              <p class="card-title">30Hikers(30인의 등산러들)</p>
+              <p class="card-sub-title">사람냄새나는 사람들과 4계절 등산</p>
+              <span class="card-members">멤버 8</span>
+            </div>
+            <div class="aside">
+              <div class="card-avatar">
+                <ul class="card-icon">
+                  <li class="icon1"><img src="image/community/people-4.png" alt=""></li>
+                  <li class="icon2"><img src="image/community/people-5.png" alt=""></li>
+                  <li class="icon3"><img src="image/community/people-6.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="trigger_btn">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 카드 3 -->
+          <li class="card2 new-group-card js-open-detail">
+            <div class="card2-img">
+              <img src="image/community/new3.png" alt="필름카메라 “햇살 좋은 날”">
+            </div>
+            <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+            <div class="card2-txt">
+              <div class="card2-tags">
+                <span class="card-badge">마포구</span>
+                <span class="card-badge">사진/영상</span>
+              </div>
+              <p class="card-title">필름카메라 “햇살 좋은 날”</p>
+              <p class="card-sub-title">사진/릴스 촬영 관심있는 분들 환영</p>
+              <span class="card-members">멤버 2</span>
+            </div>
+            <div class="aside">
+              <div class="card-avatar">
+                <ul class="card-icon">
+                  <li class="icon1"><img src="image/community/people-7.png" alt=""></li>
+                  <li class="icon2"><img src="image/community/people-8.png" alt=""></li>
+                  <li class="icon3"><img src="image/community/people-9.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="trigger_btn">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 카드 4 -->
+          <li class="card2 new-group-card js-open-detail">
+            <div class="card2-img">
+              <img src="image/community/new4.png" alt="체형교정 전문 1:1 기구필라테스">
+            </div>
+            <button class="add-to-wish">
+              <img src="image/community/hearticon.png" alt="wish icon">
+            </button>  
+            <div class="card2-txt">
+              <div class="card2-tags">
+                <span class="card-badge">마포구</span>
+                <span class="card-badge">운동/스포츠</span>
+              </div>
+              <p class="card-title">체형교정 전문 1:1 기구필라테스</p>
+              <p class="card-sub-title">1:1 필라테스를 체험해 보세요</p>
+              <span class="card-members">멤버 2</span>
+            </div>
+            <div class="aside">
+              <div class="card-avatar">
+                <ul class="card-icon">
+                  <li class="icon1"><img src="image/community/people-10.png" alt=""></li>
+                  <li class="icon2"><img src="image/community/people-11.png" alt=""></li>
+                  <li class="icon3"><img src="image/community/people-12.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="trigger_btn">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 카드 5 -->
+          <li class="card2 new-group-card js-open-detail">
+            <div class="card2-img">
+              <img src="image/community/new5.png" alt="최고의 캠핑">
+            </div>
+            <button class="add-to-wish">
+                <img src="image/community/hearticon.png" alt="wish icon">
+              </button>  
+            <div class="card2-txt">
+              <div class="card2-tags">
+                <span class="card-badge">강남구</span>
+                <span class="card-badge">아웃도어/여행</span>
+              </div>
+              <p class="card-title">최고의 캠핑</p>
+              <p class="card-sub-title">환영합니다~~</p>
+              <span class="card-members">멤버 2</span>
+            </div>
+            <div class="aside">
+              <div class="card-avatar">
+                <ul class="card-icon">
+                  <li class="icon1"><img src="image/community/people-13.png" alt=""></li>
+                  <li class="icon2"><img src="image/community/people-14.png" alt=""></li>
+                  <li class="icon3"><img src="image/community/people-15.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="trigger">
+              <div class="trigger_btn">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button class="button2 btn-view-more" type="button">
+          더 많은 모임 보러가기
+        </button>
+      </section>
+
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-name">(주)리솜컴퍼니</div>
+        <p>사업자등록번호 : 588-87-00966 | 대표 : 정명원 <br>
+        통신판매업 신고번호 : 제2018-서울마포-1192호 <br>
+        서울특별시 마포구 홍익로2길 7 3층 <br>
+        고객센터 1800-9764 / help@sssdc.co.kr
+        </p>
+        <p>(주)리솜컴퍼니는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. <br>
+        상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+        <div class="footer-desc">
+          <p>서비스이용약관</p>
+          <p>개인정보처리방침</p>
+        </div>
+        <p>구매안전 서비스 가입사실 확인 </p>
+        <div class="copy">Copyright 2025. RESOME. All rights reserved.</div>
+      </div>
+    </footer>
+
+  </div><!-- /.app -->
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/community.js"></script>
+</body>
+</html>
+
