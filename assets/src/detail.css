@@ -6,6 +6,7 @@
   max-width: 43rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  padding-top: 5rem;
 }
 
 .bar{
@@ -16,6 +17,9 @@
   align-items: center; 
   padding: 0 2.2rem;
   border-bottom: 1.5px solid #EDEDED;
+  position:fixed;
+  z-index: 5;
+  background-color: #fff;
 }
 .bar a img{ 
   display: block;
