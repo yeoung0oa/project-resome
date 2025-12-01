@@ -37,7 +37,6 @@
   line-height: 2rem;
   color: var(--medium-gray);
   padding: 1.6rem;
-  padding-bottom: 16rem;
   text-align: center;
 }
 
@@ -125,9 +124,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   padding: 0 3.5rem;
   margin-bottom: 6rem;
 }
