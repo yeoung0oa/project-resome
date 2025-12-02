@@ -37,6 +37,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  padding: 0 1.7rem;
+  color: var(--medium-gray);
 }
 .wl-selectall,
 .wl-delete {
@@ -191,9 +193,11 @@
 .wl-reserve {
   width: 100%;
   padding: 1.8rem 0;
+  margin-bottom: 2rem;
   background: var(--primary);
   color: #fff;
   font-size: 1.6rem;
   border-radius: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
