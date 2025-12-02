@@ -1,31 +1,41 @@
+
 .community{
-  max-width: 43rem;
   width: 100%;
-  /*margin: 0 auto;*/
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 5rem 0 auto; 
   font-family: "Noto Sans KR", sans-serif;
   font-size: var(--default-fs);
   color: var(--default-color);
 }
 .community-wrap{
   width: 100%;
+  /*margin-top: 5.2rem;*/
 }
 .community-header{
+  position: fixed;
+  top: 6.2rem;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
   display: flex;
   height: 5.2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 2.3rem 2.5rem;
+  padding: 0 2.5rem;
 }
 .btn-back img{
   width: 2.2rem;
   margin-top: 0.3rem;
 }
 .btn-wish img{
-  width: 2.4rem;
+  width: 2.9rem;
+  /*visibility: hidden;*/
 }
 .community-title{
   font-size: 1.8rem;
   font-weight: var(--medium);
+  margin-left: 3.5rem;
 }
 
 .top-menu-bar{
@@ -39,10 +49,11 @@
   background: #B92027;
   height: 132rem;
   position: relative;
+  overflow: hidden;
 }
 .hero-inner{
-  position: relative;
-  width: 43rem;
+  width: 100%;
+
 }
 .hero-head{
   text-align: center;
@@ -81,30 +92,42 @@
   width: 100%;
   z-index: 0;
 }
-
 .hero-bg img{
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .hero-window img{
   position: absolute;
-  top: 16.7rem;
-  left: 0.3rem;
-  width: 41.5rem;
+  top: 22rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38rem;
 }
 .hero-character img{
   position: absolute;
   top: 45rem;
-  left: 4.4rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 32.7rem;
+}
+.hero-character-hand img{
+  position: absolute;
+  top: 66rem;
+  left: 60%;
+  width: 5rem;
+  z-index: 1;
 }
 .hero-cardbg img{
 /* border: 5px solid #000; */
-  position: relative;
+  position: absolute;
   z-index: 2;
-  top: -6rem;
-  left: -0.05rem;
-  width: 43rem;
+  top: 66rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 62rem;
+  z-index: 0;
 }
 .hero-card{
   position: absolute;
@@ -140,6 +163,7 @@
   margin-bottom: 2.3rem;
 }
 .hero-review-list{
+  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +173,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38rem;
+  width: 35.5rem;
   height: 10rem;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 2rem;
@@ -157,7 +181,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .hero-review:nth-child(2){
-  width: 38rem;
+  width: 35.5rem;
   height: 10rem;
   border: 1px solid #B31F26;
   margin: auto;
@@ -168,7 +192,8 @@
   font-size: 1.4rem;
   color: var(--default-color);
   font-weight: var(--regular);
-  line-height: normal;
+  line-height: 1.2;
+  letter-spacing: 0.3rem;
   letter-spacing: -0.4px;
 }
 .hero-review-img img{
@@ -183,11 +208,12 @@
   color: #fff;
   width: 100%;
   height: 35rem;
+  text-align: center;
 }
 .ott-title{
   font-size: 3rem;
   font-weight: 600;
-  padding: 5.4rem 0 0 6rem;
+  padding-top: 5.4rem;
 }
 .ott-title span{
   color: var(--primary);
@@ -200,12 +226,10 @@
 }
 .ott-card img{
   width: 12rem;
-  /*height: 26.8rem;*/
 }
 
 /* 이번주 인기 모임 */
 .weekly{
-  /*border: 1px solid #000;*/
   height: 76rem;
   color: #291F12;
   width: 100%;
@@ -231,13 +255,16 @@
 }
 .weekly-list{
   display: grid;
+  place-items: center;
+  width: 100%;
   grid-template-columns: repeat(2,1fr);
-  gap: 1.6rem;
-  padding: 2.4rem 1.8rem 4rem 1.8rem;
+  row-gap: 0.1rem;
+  padding: 2.4rem 0 0 0;
 }
 .group-card{
-  width: 18.7rem;
+  width: 18.5rem;
   height: 26rem;
+  margin-bottom: 4rem;
 }
 .group-card img{
   width: 100%;
@@ -271,6 +298,7 @@
 }
 .button2{
   margin: 0 auto;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -358,16 +386,17 @@
 }
 .trigger_btn span:nth-child(1){
   top: 0.4rem;
-  left: 0.1rem;
+  /*left: 0.1rem;*/
+  left: 0;
   rotate: 90deg;
 }
 .trigger_btn span:nth-child(2){
   top: 0.4rem;
-  left: 0.1rem;
+  /*left: 0.1rem;*/
+  left: 0;
 }
 .trigger_btn.active span:nth-child(1){
   top: 49%;transform: rotate(-45deg);
-  /* transform-origin: right bottom; */
 }
 .trigger_btn.active span:nth-child(2){top: 49%;transform: rotate(-45deg);}
 
