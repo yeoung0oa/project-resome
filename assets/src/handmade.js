@@ -10,7 +10,7 @@ wishBtn.forEach(item => {
 document.querySelectorAll('.swipers').forEach(function(elem) {
   new Swiper(elem, {
     slidesPerView: 3,
-    spaceBetween: -30,
+    spaceBetween: -10,
     freeMode: true,
   });
 });

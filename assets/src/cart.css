@@ -1,0 +1,105 @@
+/* Layout */
+.wish { width: 100%; }
+.wish-wrap { padding: 2rem; }
+
+/* Header */
+.wish-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.wish-title { font-size: 1.8rem; font-weight: 600; }
+
+/* Tools */
+.wish-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Checkbox */
+.wish-check {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wish-check.on {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* List */
+.wish-list { display: flex; flex-direction: column; gap: 1.8rem; }
+.wish-item {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.6rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+/* Thumbnail */
+.wish-thumb img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Info */
+.wish-info { flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+.wish-brand { font-size: 1.3rem; color: #999; }
+.wish-name { font-size: 1.4rem; font-weight: 500; line-height: 1.4; }
+.wish-badge {
+  font-size: 1.2rem;
+  color: var(--primary);
+  background: var(--primary-sub);
+  padding: 0.3rem 0.8rem;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+/* Price */
+.wish-price { display: flex; align-items: center; gap: 0.7rem; }
+.wish-discount { color: var(--primary); font-weight: 700; }
+.wish-current { font-weight: 600; }
+.wish-original {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+/* Bottom Buttons */
+.wish-more {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.4rem 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+
+.wish-bottom {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.wish-reserve {
+  width: 100%;
+  padding: 1.8rem 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}

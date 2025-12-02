@@ -29,17 +29,14 @@ $(document).on('click', '.select_cus .trigger', function(e) {
   const $select = $(this).closest('.select_cus');
   const $options = $select.find('.option');
 
-  // 다른 select 닫기
   $('.select_cus').not($select).removeClass('active').find('.option').hide();
 
-  // 현재 토글
   $select.toggleClass('active');
   $options.toggle();
 
   e.stopPropagation();
 });
 
-// 옵션 선택
 $(document).on('click', '.select_cus .option li', function(e) {
   const $li = $(this);
   const $select = $li.closest('.select_cus');
@@ -59,7 +56,6 @@ $(document).on('click', '.select_cus .option li', function(e) {
   e.stopPropagation();
 });
 
-// 바깥 클릭시 닫기
 $(document).on('click', function() {
   $('.select_cus').removeClass('active').find('.option').hide();
 });

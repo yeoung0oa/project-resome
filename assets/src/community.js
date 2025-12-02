@@ -29,7 +29,7 @@ $(".trigger_btn").click(function () {
 
   if (quick) {
 
-    $avatar.addClass("active");  // 먼저 보이게 하고
+    $avatar.addClass("active"); 
 
     $card.find(".icon3").stop().animate({ right: "5rem" }, 300);
     $card.find(".icon2").stop().animate({ right: "3rem" }, 300);
@@ -50,6 +50,11 @@ $(".trigger_btn").click(function () {
   }
 });
 
+  $(".add-to-wish img").each(function(index){
+    if(index < 3){
+      $(this).attr("src", "image/community/hearticon-1.png");
+    }
+  });
 
   $(".add-to-wish").on("click", function (e) {
     e.stopPropagation();
@@ -59,9 +64,8 @@ $(".trigger_btn").click(function () {
     const isPink = imgEl.attr("src").includes("hearticon-1.png");
     const newSrc = isPink
       ? "image/community/hearticon.png" 
-      : "image/community/hearticon-1.png";    // 핑크 하트로 변경
+      : "image/community/hearticon-1.png";
 
-    // 자연스러운 fade 전환
     imgEl.stop(true, true).fadeOut(120, function () {
       imgEl.attr("src", newSrc).fadeIn(120);
     });
