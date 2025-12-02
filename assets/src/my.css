@@ -1,0 +1,254 @@
+/* 상단 헤더 */
+.header-top {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 5.6rem;
+  background-color: var(--white);
+  padding: 0 2.2rem;
+  border-bottom: 1px solid var(--light-gray2);
+  margin-bottom: 3rem;
+}
+.page-info{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.page-info p{
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-weight: var(--semibold);
+}
+.page-info img{margin-left: 2.2rem;}
+
+/* 전체 레이아웃 */
+#wrap {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin-bottom: 10rem;
+  background-color: var(--white);
+}
+
+
+
+/* 프로필 카드 */
+
+.info-card{
+  background-color: var(--light-gray1);
+  width: 100%;
+  padding: 1.8rem;
+  margin-top: 5.6rem;
+}
+.Card{
+  border: 0.2rem solid var(--light-gray2);
+  display: flex;
+  width: 100%;
+  height: 33.3rem;
+  border-radius: 2rem;
+  flex-direction: column;
+  background-color: var(--white);
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.profile p{
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  color: var(--default-color);
+}
+.profileInfo{
+  display: flex;
+  width: 17.7rem;
+  margin-left: 3.3rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  font-size: 2rem;
+}
+.profileInfo img{
+  width: 4.6rem;
+  height: 4.6rem;
+  margin-right: 0.8rem;
+}
+.profileInfo span:nth-of-type(1){
+  font-size: 2rem;
+  color: var(--default-color);
+  margin-right: 0.5rem;
+}
+.profileInfo span:nth-of-type(2){
+  font-size: 1.4rem;
+  color: var(--default-color);
+}
+.card-contents{
+  width: 100%;
+  height: 12rem;
+  margin: auto;
+  margin-top: 1.1rem;
+}
+.contentsList{
+  width: 33rem;
+  border-bottom: 0.2rem solid #cfcccc;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+  display: flex;
+}
+.contentsList:last-child{border-bottom: none;}
+.con1{
+  border-right: 0.2rem solid #cfcccc;
+  display: flex;
+  height: 12rem;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.con1:last-child{border-right: none;}
+.con1 img{
+  width: 5rem;
+  margin-bottom: 1.3rem;
+}
+.con1:last-child{margin-top: 0.3rem;}
+.con1 p{
+  color: var(--default-color);
+  font-size: 1.8rem;
+  display: flex;
+  gap: 0.3rem;
+}
+.con1 p img{
+  width: 1rem;
+  margin: auto;
+}
+.con2{
+  border-right: 0.2rem solid #cfcccc;
+  display: flex;
+  width: 30rem;
+  justify-content: center;
+  align-items: center;
+}
+.con2:last-child{border-right: none;}
+.con2 img{width: 2.3rem;}
+.con2 p{
+  font-size: 1.4rem;
+  color: var(--default-color);
+  margin-left: 0.5rem;
+}
+.con2 p span{
+  color: #FF629C;
+  padding-left: 0.3rem;
+  font-size: 1.5rem;
+}
+
+/* 배너 슬라이드 */
+.swiper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-rapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 구매내역 */
+
+.sectionTitle{
+  border-bottom: 1.2rem solid var(--light-gray1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.sectionTitle h3{
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
+  font-size: 2rem;
+  font-weight: var(--bold);
+  margin-bottom: 2rem;
+}
+.sectionTitle:last-of-type{border-bottom: none;}
+.day_class_card {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.day_card {width: 12rem;}
+.day_card img{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.day_card p{
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: var(--medium);
+}
+.day_card .place-card-price{font-size: 1.3rem;}
+.day_card .place-card-price h6{color: var(--secondary);}
+
+/* 고객센터 */
+.sectionTitle em{
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.7rem;
+  color: var(--default-color);
+  font-weight: var(--medium);
+  margin-bottom: 2.2rem;
+}
+.sectionTitle span{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  margin-bottom: 1rem;
+}
+.sectionTitle span p{
+  font-size: 1.4rem;
+  font-weight: var(--medium);
+  margin-left: 0.5rem;
+}
+.sectionTitle strong{
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  font-weight: var(--bold);
+}
+
+/* 로그아웃 버튼 */
+.submit-btn{
+  width: 100%;
+  height: 5rem;
+  background: var(--primary);
+  border-radius: 0.7rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3rem auto;
+}
+
+/* .submit-btn {
+  width: 100%;
+  height: 5rem;
+  background: var(--primary);
+  border-radius: 0.7rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3rem auto;
+}
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem; */

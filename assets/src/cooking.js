@@ -5,7 +5,7 @@ export default{
   init(root){
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: -10,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -43,13 +43,13 @@ $(document).ready(function () {
 //icon click
 $(document).ready(function () {
 
-  $(".icons .box").click(function (e) {
+  $(".cook-icons .box").click(function (e) {
     e.preventDefault();
 
     const target = $(this).data("category"); 
     const $targetSection = $("#" + target); 
 
-    $(".icons .box").removeClass("active");
+    $(".cook-icons .box").removeClass("active");
     $(this).addClass("active");
 
     $(".category-content").removeClass("active").hide();

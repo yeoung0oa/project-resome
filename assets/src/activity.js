@@ -1,19 +1,13 @@
-import { bus } from '/assets/common.js';
+
 
 /* swiper */
-export default{
-  init(root){
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  },
-  dispose(root){}
-};
+document.querySelectorAll('.mySwiper').forEach(function(elem) {
+  new Swiper(elem, {
+    slidesPerView: 3,
+    spaceBetween: -10,
+    freeMode: true,
+  });
+});
 
 
 //Heart Click
