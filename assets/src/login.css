@@ -8,13 +8,12 @@
   margin-bottom: 3rem;
 }
 #wrap{
-  width: 100%;
-  margin-bottom: 5rem;
-  padding: 0 1.5rem;
+  width: 100%;         
   background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
 }
 
 .log-inner{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,14 +29,15 @@
 }
 .login{
   display: flex;
+  width: 37rem;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .login :is(input[type=text],input[type=password]){
   border: 1px solid #FF3164;
-  display: inline-block;
-  width: 40rem;
+  display: flex;
+  width: 100%;
   height: 6.2rem;
   align-items: center;
   background-repeat: no-repeat;
@@ -50,12 +50,12 @@
   text-indent: 6.5rem;
 }
 
-.login input[type=text]{background-image: url(../image/joeun/id.svg);}
-.login input[type=password]{background-image: url(../image/joeun/pw.svg);}
+.login input[type=text]{background-image: url(/image/joeun/id.svg);}
+.login input[type=password]{background-image: url(/image/joeun/pw.svg);}
 
 .login_radio{
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-left: -60%;
 }
 
