@@ -8,7 +8,8 @@
   margin-bottom: 3rem;
 }
 #wrap{
-  width: 100%;         
+  width: 100%;    
+  overflow: hidden;
   background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
 }
 
