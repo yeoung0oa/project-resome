@@ -105,12 +105,12 @@
 }
 .top-bar .prev-btn{
   position: absolute;
-  top: 1.2rem;
-  left: 1.5rem;
+  top: 1rem;
+  left: 2.2rem;
 }
 .top-bar .prev-btn img{
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .top-bar .top-tit{
   font-size: 1.8rem;
@@ -290,7 +290,7 @@
   box-shadow: 0 0 0.5rem var(--primary);
 
 }
-.method .radio input:checked+label {border: 0.1rem solid var(--primary);}
+.method .radio input:checked+label {border: 0.1rem solid var(--primary);box-shadow: 0 0 1rem rgba(255, 49, 100, 0.1);}
 
 .simple .radio{
   width: 100%;
@@ -313,7 +313,7 @@
 }
 .simple .radio label img{height: 2.5rem;}
 .simple .radio label:nth-of-type(2) img{height: 2rem;}
-.simple .radio input:checked+label {border: 0.1rem solid var(--primary);}
+.simple .radio input:checked+label {border: 0.1rem solid var(--primary);box-shadow: 0 0 1rem rgba(255, 49, 100, 0.1);}
 
 /* payment-s4,s5 공통_____________________________________________ */
 .payment-s4 .sec-title,

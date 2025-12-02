@@ -56,12 +56,12 @@
 }
 .top-bar .prev-btn{
   position: absolute;
-  top: 1.2rem;
-  left: 1.5rem;
+  top: 1rem;
+  left: 2.2rem;
 }
 .top-bar .prev-btn img{
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .top-bar .top-tit{
   font-size: 1.8rem;
@@ -211,6 +211,10 @@
   font-size: var(--defaut-fz);
   position: relative;
   border-radius: 1rem;
+}
+.radio input:disabled+label{
+  background: var(--light-gray2);
+  color: var(--dark-gray);
 }
 .radio input:checked+label {
   background: rgba(255, 49, 100, 0.7);
