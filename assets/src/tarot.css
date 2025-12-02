@@ -54,7 +54,7 @@
 .category-content .category-inner .category-img img{
   width: 5rem;
   height: 6.3rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 .cards{
   display: flex;
@@ -236,6 +236,11 @@
 }
 
 .swipers img:hover{opacity: 1;}
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
+}
 
 /* 3번째 섹션(다른카테고리 아이콘) */
 .icon{
