@@ -23,6 +23,7 @@
 
 /* 전체 레이아웃 */
 #wrap {
+  border: 1px solid #000;
   width: 100%;
   background-color: var(--white);
 }
