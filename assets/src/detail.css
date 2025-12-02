@@ -4,12 +4,12 @@
 }
 .wrap{
   max-width: 43rem;
-  margin: 0 auto;
   padding: 0 1.5rem;
+  margin: 0 auto;
   padding-top: 5rem;
 }
 
-.bar{
+.top{
   width: 100%;
   height: 5rem;
   display: flex;
@@ -17,20 +17,16 @@
   align-items: center; 
   padding: 0 2.2rem;
   border-bottom: 1.5px solid #EDEDED;
-  position:fixed;
-  z-index: 5;
+  position: fixed;
   background-color: #fff;
+  z-index: 10;
 }
-.bar a img{ 
-  display: block;
-  height: 3rem;
-  width: 3rem;
-}
-.bar-inner h4{
+.top img{width: 3rem;}
+.top p{
   font-size: 1.8rem;
   font-weight: var(--medium);
 }
-.bar div{
+.top div{
   width: 3rem;
   height: 3rem;
 }
@@ -271,9 +267,13 @@
 }
 
 /* section3___________ */
-.recommend{width: 100%;}
+.recommend{
+  width: 43rem;
+  margin-left: -1.5rem;
+}
+
 .recommend h2{
-  margin: auto;
+  padding: 0 0 0 1.5rem;
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
   font-size: 1.8rem;
   margin-top:5rem;
@@ -285,7 +285,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  overflow: hidden;
 }
 .slide-row{
   overflow: hidden;
@@ -299,7 +298,6 @@
 .right-slide,
 .left-slide{
   display: inline-block;
-  gap: 1rem;
   white-space: nowrap;
   will-change: transform;
 }
@@ -500,6 +498,8 @@
   font-size: 1.8rem;
 }
 .cards-1{
+  width: 43rem;
+  margin-left: -1.5rem;
   display: flex;
   flex-direction: column;
   background-color: var(--default-color);
