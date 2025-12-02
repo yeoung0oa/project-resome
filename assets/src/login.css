@@ -1,18 +1,17 @@
 
-
-
-#wrap{
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
-}
 .header-top {
   display: flex;
   width: 100%;
   height: 7.4rem;
-  padding: 0 1.5rem;
 }
+
+#wrap{
+  width: 100%;
+  margin-bottom: 5rem;
+  padding: 0 1.5rem;
+  background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
+}
+
 .log-inner{
   display: flex;
   flex-direction: column;
