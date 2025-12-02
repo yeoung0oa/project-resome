@@ -127,7 +127,7 @@
   content: '';
   margin: 0.5rem 3rem;
   display: inline-block;
-  width: 16rem;
+  width: 12rem;
   border: 0.1rem solid var(--secondary-sub);
 }
 .snsLog span:after{
