@@ -257,7 +257,7 @@
 .weekly-list{
   display: grid;
   place-items: center;
-  width: 90%;
+  width: 100%;
   grid-template-columns: repeat(2,1fr);
   row-gap: 0.1rem;
   padding: 2.4rem 0 0 0;
