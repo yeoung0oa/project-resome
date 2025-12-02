@@ -15,6 +15,7 @@
   background-color: var(--white);
   padding: 1.3rem;
   border-bottom: 1px solid var(--light-gray2);
+  margin-bottom: 3rem;
 }
 .page-info{
   display: flex;
@@ -38,6 +39,7 @@
   background-color: var(--light-gray1);
   width: 100%;
   padding: 1.8rem;
+  margin-top: 5.6rem;
 }
 .Card{
   border: 0.2rem solid var(--light-gray2);
