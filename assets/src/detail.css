@@ -465,6 +465,7 @@
 }
 .class-txt b{
   display: block;
+  line-height: 2.5rem;
   font-size: 1.4rem;
   font-weight: var(--medium);
   margin-bottom: 0.7 rem;
