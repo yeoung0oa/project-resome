@@ -7,6 +7,9 @@
   align-items: center; 
   padding: 0 2.2rem;
   border-bottom: 1.5px solid #EDEDED;
+  position:fixed;
+  z-index: 5;
+  background-color: #fff;
 }
 .bar a img{ 
   display: block;
@@ -21,6 +24,7 @@
   width: 3rem;
   height: 3rem;
 }
+.category-wrap{padding-top: 5rem;}
 .category-content{
   width: 100%;
   background:linear-gradient(var(--primary-sub),var(--white),var(--primary-sub));
@@ -50,7 +54,7 @@
 .category-content .category-inner .category-img img{
   width: 5rem;
   height: 6.3rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 .cards{
   display: flex;
@@ -125,7 +129,7 @@
   gap: 0.5rem;
   font-size: 1.4rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
 .card .card-inner .card-txt .text-inner h6{
   color: var(--primary);
@@ -232,6 +236,11 @@
 }
 
 .swipers img:hover{opacity: 1;}
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
+}
 
 /* 3번째 섹션(다른카테고리 아이콘) */
 .icon{
