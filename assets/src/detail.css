@@ -115,7 +115,10 @@
   margin: 2rem 0;
 }
 .gallery-txt p{margin-top: 1rem;}
-.gallery-txt p img{margin-right: 1.5rem;}
+.gallery-txt p img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;}
 
 .gallery-addtxt{margin-top: 2rem;}
 .gallery-addtxt-1{
@@ -154,7 +157,8 @@
 .modal{
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.8);
   display: none;
   justify-content: center;
@@ -166,7 +170,7 @@
   color: var(--white);
   padding: 2.5rem;
   border-radius: 2rem;
-  width: 100%;
+  width: 90%;
   max-width: 40rem;
   max-height: 100vh;
   overflow-y: auto;
@@ -434,9 +438,16 @@
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
   font-size:  1.8rem;
 }
+.class-toggle img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
 .class-toggle img.rotate {
   transform: rotate(180deg);
   transition: .3s;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .class-txt{
   display: none;
@@ -479,7 +490,7 @@
 .class-txt .class-inner-txt p{
   font-size: 1.1rem;
   font-weight: var(--regular);
-  text-indent: 2.4rem;
+  text-indent: 2.2rem;
   margin-bottom: 1rem;
 }
 

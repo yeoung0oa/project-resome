@@ -113,4 +113,3 @@ function boot() {
   render();
 }
 document.addEventListener('DOMContentLoaded', boot);
-
