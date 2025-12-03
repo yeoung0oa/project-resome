@@ -51,7 +51,7 @@ $(".trigger_btn").click(function () {
 });
 
   $(".add-to-wish img").each(function(index){
-    if(index < 3){
+    if(index < 1){
       $(this).attr("src", "image/community/hearticon-1.png");
     }
   });
@@ -71,6 +71,21 @@ $(".trigger_btn").click(function () {
     });
   });
 
+
+  $(".weekly-list .group-card")
+    .hide()
+    .slice(0, 4)
+    .show();
+
+  $(".weekly .btn-view-more").on("click", function () {
+    $(".weekly-list .group-card:hidden")
+      .slice(0, 2)
+      .slideDown(300);
+
+    if ($(".weekly-list .group-card:hidden").length === 0) {
+      $(this).hide();
+    }
+  });
 
 
 

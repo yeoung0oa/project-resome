@@ -231,9 +231,10 @@
 
 /* 이번주 인기 모임 */
 .weekly{
-  height: 76rem;
+  height: fit-content;
   color: #291F12;
   width: 100%;
+  margin-bottom: 6.5rem;
 }
 .weekly-head{
   margin-top: 6.4rem;
@@ -262,6 +263,7 @@
   row-gap: 0.1rem;
   padding: 2.4rem 0 0 0;
   margin: auto;
+  gap: 0.5rem;
 }
 .group-card{
   width: 18.5rem;
