@@ -22,15 +22,16 @@
   height: 5.2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.5rem;
+  padding: 0 1.7rem;
 }
 .btn-back img{
+  /* border: 1px solid #000; */
   width: 2.2rem;
   margin-top: 0.3rem;
 }
 .btn-wish img{
   width: 2.9rem;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 .community-title{
   font-size: 1.8rem;
@@ -186,9 +187,9 @@
   border: 1px solid #B31F26;
   margin: auto;
   padding: 2.5rem;
-  /* gap: 4.5rem; */
 }
 .hero-review-text{
+  width: 65%;
   font-size: 1.4rem;
   color: var(--default-color);
   font-weight: var(--regular);
@@ -256,10 +257,11 @@
 .weekly-list{
   display: grid;
   place-items: center;
-  width: 100%;
+  width: 90%;
   grid-template-columns: repeat(2,1fr);
   row-gap: 0.1rem;
   padding: 2.4rem 0 0 0;
+  margin: auto;
 }
 .group-card{
   width: 18.5rem;
@@ -296,8 +298,13 @@
   font-size: 1.1rem;
   color: var(--secondary);
 }
+
+.btn-re{
+  padding: 0 3.5rem;
+}
 .button2{
   margin: 0 auto;
+  width: 100%;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -487,3 +494,4 @@
   font-size: 1.1rem;
   padding-bottom: 3rem;
 }
+
