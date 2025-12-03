@@ -178,6 +178,7 @@
   display: flex;
   column-gap: 1rem;
   width: 100%;
+  margin-bottom: 3rem;
   justify-content: center;
 }
 .day_card {width: 12rem;}
@@ -214,7 +215,7 @@
   font-size: 1.7rem;
   color: var(--default-color);
   font-weight: var(--medium);
-  margin-bottom: 2.2rem;
+  margin-bottom: 3rem;
 }
 .sectionTitle span{
   display: flex;
