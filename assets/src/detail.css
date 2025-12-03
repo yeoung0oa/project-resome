@@ -260,7 +260,7 @@
   font-size: 1.5rem;
   font-weight: var(--regular);
 }
-.reservation-click .right-btn{
+.reservation-click .right-btn a{
   width: 18rem;
   height: 5rem;
   border-radius: 0.5rem;
@@ -460,13 +460,14 @@
 }
 .class-txt h3{
   font-size: 1.8rem;
-  font-weight: var(--medium);
+  font-weight: var(--semibold);
   color: var(--primary);
   margin-bottom: 1rem;
 }
 .class-txt span{
   display: block;
   font-size: 1.4rem;
+  font-synthesis: 1.8rem;
   font-weight: var(--regular);
   margin-bottom: 1rem;
   padding-left: 1rem;
@@ -475,18 +476,24 @@
   display: block;
   line-height: 2.5rem;
   font-size: 1.4rem;
-  font-weight: var(--medium);
-  margin-bottom: 0.7 rem;
+  font-weight: var(--semibold);
+  margin-bottom: 0.7rem;
   padding-left: 1rem;
 }
-.class-txt .class-inner-txt{margin-bottom: 2rem;}
+.class-txt .class-inner-txt{
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
 .class-txt .class-inner-txt img{
-  width: 40rem;
+  width: 38rem;
   height: 20rem;
   object-fit: cover;
-  padding-left: 2.5rem;
+  margin-left: 2.5rem;
 }
-.class-txt .class-inner-txt b{padding-left: 1rem;}
+.class-txt .class-inner-txt b{
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
 .class-txt .class-inner-txt p{
   font-size: 1.1rem;
   font-weight: var(--regular);
