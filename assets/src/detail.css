@@ -1,15 +1,14 @@
 .detail-page{
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
 }
 .wrap{
-  max-width: 43rem;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 1.5rem;
   padding-top: 5rem;
 }
 
-.bar{
+.top{
   width: 100%;
   height: 5rem;
   display: flex;
@@ -17,20 +16,16 @@
   align-items: center; 
   padding: 0 2.2rem;
   border-bottom: 1.5px solid #EDEDED;
-  position:fixed;
-  z-index: 5;
+  position: fixed;
   background-color: #fff;
+  z-index: 10;
 }
-.bar a img{ 
-  display: block;
-  height: 3rem;
-  width: 3rem;
-}
-.bar-inner h4{
+.top img{width: 3rem;}
+.top p{
   font-size: 1.8rem;
   font-weight: var(--medium);
 }
-.bar div{
+.top div{
   width: 3rem;
   height: 3rem;
 }
@@ -94,7 +89,7 @@
 #largeImg{
 	width: 100%;
 	height: 30rem;
-	margin-bottom: 0.7rem;
+	margin-bottom: 0.5rem;
 }
 #largeImg img{
 	width: inherit;
@@ -107,7 +102,7 @@
   justify-content: center;
 }
 .thumbs img{
-  width: 8rem;
+  width: 8.5rem;
   height: 6rem;
   object-fit: cover;
   opacity: 0.6;
@@ -120,7 +115,10 @@
   margin: 2rem 0;
 }
 .gallery-txt p{margin-top: 1rem;}
-.gallery-txt p img{margin-right: 1.5rem;}
+.gallery-txt p img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;}
 
 .gallery-addtxt{margin-top: 2rem;}
 .gallery-addtxt-1{
@@ -159,7 +157,8 @@
 .modal{
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.8);
   display: none;
   justify-content: center;
@@ -172,7 +171,7 @@
   padding: 2.5rem;
   border-radius: 2rem;
   width: 90%;
-  max-width: 50rem;
+  max-width: 40rem;
   max-height: 100vh;
   overflow-y: auto;
   text-align: center;
@@ -180,7 +179,9 @@
 .modal-content #modal-signup-btn,
 .modal-content #modal-login-btn{
   background-color: var(--primary);
-  padding: 1.2rem 13rem;
+  padding: 1.2rem 3rem;
+  width: auto;
+  max-width: 100%;
 }
 .modal-content img {
   width: 100%;
@@ -259,7 +260,7 @@
   font-size: 1.5rem;
   font-weight: var(--regular);
 }
-.reservation-click .right-btn{
+.reservation-click .right-btn a{
   width: 18rem;
   height: 5rem;
   border-radius: 0.5rem;
@@ -273,19 +274,18 @@
 /* section3___________ */
 .recommend{width: 100%;}
 .recommend h2{
-  margin: auto;
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
   font-size: 1.8rem;
   margin-top:5rem;
   margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
 }
 .slide-inner{
   padding: 2rem 0;
   background-color: var(--default-color);
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   gap: 2rem;
-  overflow: hidden;
 }
 .slide-row{
   overflow: hidden;
@@ -299,7 +299,6 @@
 .right-slide,
 .left-slide{
   display: inline-block;
-  gap: 1rem;
   white-space: nowrap;
   will-change: transform;
 }
@@ -350,7 +349,7 @@
 .review-title{
   display: flex;
   align-items: center;
-  margin-top:5rem;
+  margin-top: 1rem;
 }
 .review-title h2{
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
@@ -439,9 +438,16 @@
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
   font-size:  1.8rem;
 }
+.class-toggle img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
 .class-toggle img.rotate {
   transform: rotate(180deg);
   transition: .3s;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .class-txt{
   display: none;
@@ -454,36 +460,44 @@
 }
 .class-txt h3{
   font-size: 1.8rem;
-  font-weight: var(--medium);
+  font-weight: var(--semibold);
   color: var(--primary);
   margin-bottom: 1rem;
 }
 .class-txt span{
   display: block;
   font-size: 1.4rem;
+  font-synthesis: 1.8rem;
   font-weight: var(--regular);
   margin-bottom: 1rem;
   padding-left: 1rem;
 }
 .class-txt b{
   display: block;
+  line-height: 2.5rem;
   font-size: 1.4rem;
-  font-weight: var(--medium);
-  margin-bottom: 0.7 rem;
+  font-weight: var(--semibold);
+  margin-bottom: 0.7rem;
   padding-left: 1rem;
 }
-.class-txt .class-inner-txt{margin-bottom: 2rem;}
+.class-txt .class-inner-txt{
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
 .class-txt .class-inner-txt img{
-  width: 40rem;
+  width: 38rem;
   height: 20rem;
   object-fit: cover;
-  padding-left: 2.5rem;
+  margin-left: 2.5rem;
 }
-.class-txt .class-inner-txt b{padding-left: 1rem;}
+.class-txt .class-inner-txt b{
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
 .class-txt .class-inner-txt p{
   font-size: 1.1rem;
   font-weight: var(--regular);
-  text-indent: 2.4rem;
+  text-indent: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -493,11 +507,11 @@
   margin-top: 5rem;
 }
 .similar h2{
-  max-width: 40rem;
   margin: auto;
   font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
   margin-bottom: 2rem;
   font-size: 1.8rem;
+  padding: 0 1.5rem;
 }
 .cards-1{
   display: flex;
@@ -574,7 +588,7 @@
   gap: 0.5rem;
   font-size: 1.4rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
 .card-1  .card-inner-1  .card-txt-1  .text-inner-1  h6{
   color: var(--primary);

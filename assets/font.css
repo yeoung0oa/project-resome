@@ -22,6 +22,7 @@
     font-weight: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'SiwonhanSeolreim';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
