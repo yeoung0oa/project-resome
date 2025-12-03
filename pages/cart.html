@@ -1,0 +1,147 @@
+
+<section class="wl">
+  <div class="wl-wrap">
+
+    <!-- 상단 헤더 -->
+    <div class="wl-header">
+      <a class="wl-back" href="/" aria-label="이전으로">
+        <img src="image/cart/left_arrow.png" alt="뒤로 가기">
+      </a>
+      <p class="wl-title">찜목록</p>
+    </div>
+
+    <!-- 전체선택 / 선택삭제 -->
+    <div class="wl-toolbar">
+      <button class="wl-selectall" type="button" data-all="false">
+        <span class="wl-check0"></span>
+        <span class="wl-label">전체선택</span>
+      </button>
+
+      <button class="wl-delete" type="button">
+        <span><img src="/image/cart/cancle.png" alt=""></span>
+        <span class="wl-delete-label">선택삭제</span>
+      </button>
+    </div>
+
+    <!-- 찜목록 리스트 -->
+    <div class="wl-main">
+      <ul class="wl-list">
+
+        <!-- 아이템 1 (기본 선택 상태) -->
+        <li class="wl-item" data-selected="true">
+          <button class="wl-itemcheck" type="button" aria-pressed="true">
+            <span class="wl-check"></span>
+          </button>
+
+          <a class="wl-link" href="#none">
+            <div class="wl-thumb">
+              <img src="image/cart/wishlist-1.png" alt="[빈티지]클래식 핸드타이드 원데이 클래스">
+            </div>
+
+            <div class="wl-info">
+              <p class="wl-brand">원데이</p>
+              <p class="wl-name">[빈티지]클래식 핸드타이드 원데이 클래스</p>
+              <p class="wl-badge">빠른예약</p>
+
+              <div class="wl-price">
+                <span class="wl-discount">18%</span>
+                <span class="wl-current">82,000원</span>
+                <span class="wl-original">100,000원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <!-- 아이템 2 -->
+        <li class="wl-item" data-selected="false">
+          <button class="wl-itemcheck" type="button" aria-pressed="false">
+            <span class="wl-check"></span>
+          </button>
+
+          <a class="wl-link" href="#none">
+            <div class="wl-thumb">
+              <img src="image/cart/wishlist-2.png" alt="특별한 레진아트 쉐이커 키링/스마트톡 클래스">
+            </div>
+
+            <div class="wl-info">
+              <p class="wl-brand">원데이</p>
+              <p class="wl-name">특별한 레진아트 쉐이커 키링/스마트톡 클래스</p>
+              <p class="wl-badge">빠른예약</p>
+
+              <div class="wl-price">
+                <span class="wl-discount">11%</span>
+                <span class="wl-current">40,000원</span>
+                <span class="wl-original">45,000원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <!-- 아이템 3 -->
+        <li class="wl-item" data-selected="false">
+          <button class="wl-itemcheck" type="button" aria-pressed="false">
+            <span class="wl-check"></span>
+          </button>
+
+          <a class="wl-link" href="#none">
+            <div class="wl-thumb">
+              <img src="image/cart/wishlist-3.png" alt="[망원] 새벽정원 화병꽃이 클래스(화병 포함)">
+            </div>
+
+            <div class="wl-info">
+              <p class="wl-brand">원데이</p>
+              <p class="wl-name">[망원] 새벽정원 화병꽃이 클래스(화병 포함)</p>
+              <p class="wl-badge">빠른예약</p>
+
+              <div class="wl-price">
+                <span class="wl-discount">25%</span>
+                <span class="wl-current">60,000원</span>
+                <span class="wl-original">80,000원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <!-- 아이템 4 -->
+        <li class="wl-item" data-selected="false">
+          <button class="wl-itemcheck" type="button" aria-pressed="false">
+            <span class="wl-check"></span>
+          </button>
+
+          <a class="wl-link" href="#none">
+            <div class="wl-thumb">
+              <img src="image/cart/wishlist-4.png" alt="[성수] 주말 아침을 여는 요가(원데이클래스)">
+            </div>
+
+            <div class="wl-info">
+              <p class="wl-brand">원데이</p>
+              <p class="wl-name">[성수] 주말 아침을 여는 요가(원데이클래스)</p>
+              <p class="wl-badge">빠른예약</p>
+
+              <div class="wl-price">
+                <span class="wl-discount">42%</span>
+                <span class="wl-current">20,000원</span>
+                <span class="wl-original">35,000원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- 더 담으러 가기 -->
+      <a class="wl-more" type="button" href="#">
+        <span class="wl-more-icon">
+          <img src="image/cart/plus.png" alt="">
+        </span>
+        <span class="wl-more-text">더 담으러 가기</span>
+      </a>
+    </div>
+
+    <!-- 하단 예약하기 버튼 -->
+    <div class="wl-bottom">
+      <a class="wl-reserve" data-link href="/reserve">예약하기</a>
+    </div>
+
+  </div>
+</section>

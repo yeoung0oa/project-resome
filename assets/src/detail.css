@@ -1,0 +1,665 @@
+.detail-page{
+  margin: auto;
+  padding: 0;
+}
+.wrap{
+  width: 100%;
+  padding: 0 1.5rem;
+  padding-top: 5rem;
+}
+
+.top{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0 2.2rem;
+  border-bottom: 1.5px solid #EDEDED;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
+}
+.top img{width: 3rem;}
+.top p{
+  font-size: 1.8rem;
+  font-weight: var(--medium);
+}
+.top div{
+  width: 3rem;
+  height: 3rem;
+}
+/* nav______________________ */
+.writer{
+  margin-top: 5rem;
+  background: var(--primary-sub);
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 7rem;
+}
+.writer-inner{
+  position: relative;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.writer-inner .writer-img{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.writer-img img{
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 1rem;
+}
+.writer-txt{
+  position: absolute;
+  top: 50%;
+  left: 19%;
+  transform: translateY(-50%);
+}
+.writer-txt h6{
+  font-size: 1.4rem;
+  font-weight: var(--medium);
+  margin-bottom: 0.5rem;
+}
+.writer-txt a{
+  display: flex;
+  align-items: center;
+}
+.writer-txt p{
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: var(--regular);
+  color: var(--primary);
+}
+.writer-txt img{
+  display: block;
+  margin-left: 2rem;
+}
+
+/* section1________ */
+#gallery{
+	width: 100%;
+  height: 36.7rem;
+}
+#largeImg{
+	width: 100%;
+	height: 30rem;
+	margin-bottom: 0.5rem;
+}
+#largeImg img{
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+}
+.thumbs{
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+}
+.thumbs img{
+  width: 8.5rem;
+  height: 6rem;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.thumbs img.active{opacity: 1;}
+
+.gallery-txt h6{
+  font-size: 1.8rem;
+  font-weight: var(--medium);
+  margin: 2rem 0;
+}
+.gallery-txt p{margin-top: 1rem;}
+.gallery-txt p img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;}
+
+.gallery-addtxt{margin-top: 2rem;}
+.gallery-addtxt-1{
+  height: 4.5rem;
+  border-top: 1px solid #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery-addtxt-1:nth-child(2){border-bottom: 1px solid #ededed;}
+.gallery-addtxt-2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 23rem;
+}
+.gallery-addtxt-2 img{
+  display: block;
+  width: 1.5rem;
+  height: 1.2rem;
+  margin-right: 1.5rem;
+}
+.gallery-addtxt-2 p{
+  font-size: 1.3rem;
+  font-weight: var(--regular);
+  color: var(--dark-gray);
+  padding-left: -20rem;
+}
+.gallery-addtxt-2 p span{color: var(--primary);} 
+.gallery-addtxt-1 a img{
+  display: block;
+  width: 0.5rem;
+  height: 0.9rem;
+}
+/* 모달창 */
+.modal{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 9999;
+}
+.modal-content{
+  color: var(--white);
+  padding: 2.5rem;
+  border-radius: 2rem;
+  width: 90%;
+  max-width: 40rem;
+  max-height: 100vh;
+  overflow-y: auto;
+  text-align: center;
+}
+.modal-content #modal-signup-btn,
+.modal-content #modal-login-btn{
+  background-color: var(--primary);
+  padding: 1.2rem 3rem;
+  width: auto;
+  max-width: 100%;
+}
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+#modal-signup-btn,
+#modal-login-btn{
+  display: none;
+  width: 100%;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* section2___________ */
+
+.reservation-bar{
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--primary-sub);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--regular);
+}
+.reservation-bar img{
+  position: relative;
+  margin-bottom: 1.2rem;
+  margin-right: 1rem;
+  width: 3.4rem;
+  height: 3.8rem;
+}
+.reservation-bar p{font-size: 1.1rem;}
+.reservation-bar p span{color: var(--primary);}
+.reservation-click{
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.05rem solid var(--medium-gray);
+  padding: 0 1rem;
+}
+.reservation-click .price-txt{
+  display: flex;
+  flex-direction: column;
+}
+.reservation-click .price-txt .up-txt{
+  display: flex;
+  align-items: center;
+}
+.reservation-click .price-txt .up-txt b{
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: var(--semibold);
+  margin-right: 0.5rem;
+}
+.reservation-click .price-txt .up-txt p{
+  font-size: 1.1rem;
+  text-decoration: line-through;
+  color: var(--dark-gray);
+  font-weight: var(--regular);
+}
+.reservation-click .price-txt .down-txt b{
+  font-size: 2rem;
+  font-weight: var(--bold);
+}
+.reservation-click .price-txt .down-txt  b span{
+  font-size: 1.5rem;
+  font-weight: var(--regular);
+}
+.reservation-click .right-btn a{
+  width: 18rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section3___________ */
+.recommend{width: 100%;}
+.recommend h2{
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
+  font-size: 1.8rem;
+  margin-top:5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1.5rem;
+}
+.slide-inner{
+  padding: 2rem 0;
+  background-color: var(--default-color);
+  display: flex;
+  flex-direction:column;
+  gap: 2rem;
+}
+.slide-row{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.slide-inner:hover .right-slide,
+.slide-inner:hover .left-slide{
+  animation-play-state: paused;
+}
+.right-slide,
+.left-slide{
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+.right-slide{animation: slide-left 30s linear infinite;}
+.left-slide{animation: slide-right 30s linear infinite;}
+
+@keyframes slide-left{
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+@keyframes slide-right{
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+
+.right-slide p,
+.left-slide p{
+  height: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: var(--medium);
+  border-radius: 10rem;
+  padding: 0 2rem;
+  margin-right: 1rem;
+}
+.right-slide p:nth-child(1){
+  background-color: var(--primary-sub);
+  color: var(--primary);
+}
+.right-slide p:nth-child(2){
+  background-color: #d2ffed;
+  color: #009e71;
+}
+.right-slide p:nth-child(3){background-color: var(--light-gray1);}
+
+.left-slide p:nth-child(1){
+  background-color: var(--secondary-sub);
+  color: var(--secondary);
+}
+.left-slide p:nth-child(2){
+  background-color: #fff8f4;
+  color: #97654b;
+}
+
+/* section4___________ */
+.review-title{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.review-title h2{
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+.review-title p{
+  color: var(--primary);
+  font-weight: var(--regular);
+}
+.reviews{
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.review-inner{
+  display: flex;
+  align-items: center;
+  background-color: #FFF8F4;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  width: 100%;
+  min-height: 14rem;
+}
+.review-inner .left{margin-right: 1rem;}
+.review-inner .left img{
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.review-inner .right{
+  font-size: 1.1rem;
+  font-weight: var(--regular);
+}
+.review-inner .right .right-card span{
+  line-height: 1.5rem;
+}
+.review-inner .right .right-card span:nth-child(1){
+  color: var(--secondary);
+  background-color: var(--secondary-sub);
+  margin-right: 0.5rem;
+}
+.review-inner .right .right-card span:nth-child(2){
+  color: var(--primary);
+  background-color: var(--primary-sub);
+}
+.review-inner .right p{
+  margin: 1rem 0 0 0;
+  padding: 0 1rem 0 0;
+}
+.review-inner .right p:last-child{
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
+.more-slide-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.more-slide-1 a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.more-slide-1 p{
+  font-size: 1.3rem;
+  font-weight: var(--regular);
+}
+
+/* section5___________ */
+.class-toggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.6rem;
+  border-bottom: 0.04rem solid var(--medium-gray);
+} 
+.class-toggle h2{
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
+  font-size:  1.8rem;
+}
+.class-toggle img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.class-toggle img.rotate {
+  transform: rotate(180deg);
+  transition: .3s;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.class-txt{
+  display: none;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.class-text.active{
+  display: block;
+}
+.class-txt h3{
+  font-size: 1.8rem;
+  font-weight: var(--semibold);
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.class-txt span{
+  display: block;
+  font-size: 1.4rem;
+  font-synthesis: 1.8rem;
+  font-weight: var(--regular);
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.class-txt b{
+  display: block;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: var(--semibold);
+  margin-bottom: 0.7rem;
+  padding-left: 1rem;
+}
+.class-txt .class-inner-txt{
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.class-txt .class-inner-txt img{
+  width: 38rem;
+  height: 20rem;
+  object-fit: cover;
+  margin-left: 2.5rem;
+}
+.class-txt .class-inner-txt b{
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.class-txt .class-inner-txt p{
+  font-size: 1.1rem;
+  font-weight: var(--regular);
+  text-indent: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* section6___________ */
+.similar{
+  width: 100%;
+  margin-top: 5rem;
+}
+.similar h2{
+  margin: auto;
+  font-family: 'SchoolSafetyRoundedSmile', sans-serif; 
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  padding: 0 1.5rem;
+}
+.cards-1{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--default-color);
+}
+.card-row-1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.card-row-1:nth-child(2){margin-top: 0;}
+.card-1{
+  width: 19rem;
+  height: 26.5rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: #FFF;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  padding: 0;
+  position: relative;
+}
+.card-inner-1{
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+.card-inner-1 .card-img-1{
+  width: 100%;
+  height: 15rem;
+}
+.card-inner-1 .card-img-1 img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+.card-inner-1 .card-txt-1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0 1rem;
+}
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(1){
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  padding-top: 0.5rem;
+}
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(2){
+  font-size: 1.3rem;
+  font-weight: var(--medium);
+  color: var(--black);
+  line-height: 1.8rem;
+  margin-top: 0.3rem;
+}
+.card-1 .card-inner-1 .card-txt-1 ul li:nth-child(3){
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-weight: var(--medium);
+  margin-top: 0.3rem;
+}
+.card-1 .card-inner-1  .card-txt-1  .text-inner-1 {
+  display: flex;
+  align-items: center;
+  height: 1.2rem;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.card-1  .card-inner-1  .card-txt-1  .text-inner-1  h6{
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+.card-1  .card-inner-1 .card-txt-1 .text-inner-1 p{
+  color: var(--black);
+  font-weight: var(--medium);
+}
+.card-1 .card-inner-1 .card-txt-1 .card-review-1 span{
+  font-size: 1.1rem;
+  font-weight: var(--regular);
+  color: var(--primary);
+  background-color: var(--primary-sub);
+  padding: 0.3rem;
+}
+.card-inner-1 .add-to-wish{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    object-fit: cover;
+  }
+.card-inner-1 .add-to-wish img{
+  width: 2.1rem;
+  height: 1.8rem;
+}
+.card-inner-1 .add-to-wish.active img{
+  content: url(/image/hm/hearticon-1.png);
+  width: 2.1rem;
+  height: 1.8rem;
+}
+.morebtn{
+  display: block;
+  border: none;
+  cursor: pointer;
+  width: 18rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+/* footer____________________________________ */
+.site-footer{
+  width: 100%;
+  height: 100%;
+  color: #4E4E4E;
+  background-color: #FDEDF3;
+  padding-bottom: 3rem;
+  margin-top: 6rem;
+}
+.footer-inner{padding: 1.5rem;}
+.footer-name{
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  font-weight: var(--medium);
+}
+.site-footer p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+.footer-desc{
+  display: flex;
+  gap: 1.5rem;
+}
+.copy{
+  font-size: 1.1rem;
+  padding-bottom: 3rem;
+}
