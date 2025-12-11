@@ -24,10 +24,8 @@
 
 /* 전체 레이아웃 */
 #wrap {
-  border: 1px solid #000;
   width: 100%;
   margin-top: 7rem;
-  margin-bottom: 7rem;
   padding: 0 1.5rem;
   background-color: var(--white);
 }
@@ -161,4 +159,13 @@ input[type=password]{margin-bottom: 1.5rem;}
 .guide-success{
   color: royalblue;
   font-weight: var(--medium);
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }

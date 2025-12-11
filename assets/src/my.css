@@ -23,7 +23,6 @@
 
 /* 전체 레이아웃 */
 #wrap {
-  border: 1px solid #000;
   width: 100%;
   background-color: var(--white);
 }
@@ -179,6 +178,7 @@
   display: flex;
   column-gap: 1rem;
   width: 100%;
+  margin-bottom: 3rem;
   justify-content: center;
 }
 .day_card {width: 12rem;}
@@ -187,14 +187,26 @@
   height: 12rem;
   border-radius: 1rem;
 }
-.day_card p{
+.day_card p:nth-of-type(1){
   margin: 1rem 0 0.5rem;
   width: 100%;
   font-size: 1.4rem;
   font-weight: var(--medium);
 }
-.day_card .place-card-price{font-size: 1.3rem;}
-.day_card .place-card-price h6{color: var(--secondary);}
+
+.day_card .place-card-price{
+  font-size: 1.3rem;
+  display: flex;
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+.day_card .place-card-price span{
+  font-size: 1.3rem;
+  margin-left: 0.8rem;
+  color: var(--default-color);
+  font-weight: var(--medium);
+}
+
 
 /* 고객센터 */
 .sectionTitle em{
@@ -203,7 +215,7 @@
   font-size: 1.7rem;
   color: var(--default-color);
   font-weight: var(--medium);
-  margin-bottom: 2.2rem;
+  margin-bottom: 3rem;
 }
 .sectionTitle span{
   display: flex;

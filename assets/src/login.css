@@ -8,9 +8,9 @@
   margin-bottom: 3rem;
 }
 #wrap{
-  width: 100%;         
-  margin-bottom: 5rem;
-  padding: 0 1.5rem;
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
   background: linear-gradient(180deg, #FFF8F4 2.68%, #FFF 76.61%);
 }
 
@@ -31,16 +31,16 @@
 }
 .login{
   display: flex;
-  width: 100%;
+  width: 35rem;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .login :is(input[type=text],input[type=password]){
   border: 1px solid #FF3164;
   display: flex;
   width: 100%;
-  height: 6.2rem;
+  height: 6rem;
   align-items: center;
   background-repeat: no-repeat;
   background-position: 2rem center;
@@ -57,7 +57,7 @@
 
 .login_radio{
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-left: -60%;
 }
 
@@ -114,7 +114,7 @@
 }
 .snsLog span{
   position: absolute;
-  width: 100%;
+  width: 41rem;
   top: 10%;
   left: 50%;
   transform: translate(-50%);
@@ -129,7 +129,7 @@
   content: '';
   margin: 0.5rem 3rem;
   display: inline-block;
-  width: 16rem;
+  width: 12rem;
   border: 0.1rem solid var(--secondary-sub);
 }
 .snsLog span:after{
