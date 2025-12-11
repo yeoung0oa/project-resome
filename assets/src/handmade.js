@@ -25,6 +25,7 @@ $(document).ready(function () {
 
     const target = $(this).data("category"); 
     const $targetSection = $("#" + target); 
+    const headerHeight = $(".top").outerHeight();
 
     $(".made-icons .box").removeClass("active");
     $(this).addClass("active");
@@ -33,7 +34,7 @@ $(document).ready(function () {
     $targetSection.addClass("active").show();
 
     $("html, body").animate({
-      scrollTop: $targetSection.offset().top - 80
+      scrollTop: $targetSection.offset().top - headerHeight - 80
     }, 300);
   });
 
