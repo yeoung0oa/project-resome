@@ -9,6 +9,7 @@ $(document).ready(function () {
         $(".wl-selectall").attr("data-all", all ? "true" : "false");
     }
 
+    // 페이지 진입 시 초기 상태 업데이트
     updateSelectAllState();
 
     $(".wl-itemcheck").on("click", function (e) {
@@ -16,6 +17,7 @@ $(document).ready(function () {
 
         const $button = $(this);
         const $item = $button.closest(".wl-item");
+        // data-selected 속성 값 가져오기
         const isSelected = $item.attr("data-selected") === "true";
         const newState = isSelected ? "false" : "true";
 
@@ -25,6 +27,7 @@ $(document).ready(function () {
         updateSelectAllState();
     });
 
+    // 전체선택 토글
     $(".wl-selectall").on("click", function () {
         const isAll = $(this).attr("data-all") === "true";
         const newState = isAll ? "false" : "true";
@@ -43,6 +46,7 @@ $(document).ready(function () {
             return;
         }
 
+        // 선택된 항목 슬라이드 업 애니메이션 후 제거
         $selectedItems.slideUp(200, function () {
             $(this).remove();
             updateSelectAllState(); 

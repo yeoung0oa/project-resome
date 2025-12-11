@@ -231,10 +231,9 @@
 
 /* 이번주 인기 모임 */
 .weekly{
-  height: fit-content;
+  height: 76rem;
   color: #291F12;
   width: 100%;
-  margin-bottom: 6.5rem;
 }
 .weekly-head{
   margin-top: 6.4rem;
@@ -257,13 +256,12 @@
 }
 .weekly-list{
   display: grid;
-  /* place-items: center; */
-  justify-content: center;
-  width: 100%;
-  grid-template-columns: repeat(2,max-content);
+  place-items: center;
+  width: 90%;
+  grid-template-columns: repeat(2,1fr);
   row-gap: 0.1rem;
   padding: 2.4rem 0 0 0;
-  gap: 0.5rem;
+  margin: auto;
 }
 .group-card{
   width: 18.5rem;

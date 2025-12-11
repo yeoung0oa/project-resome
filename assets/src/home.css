@@ -83,7 +83,7 @@
 }
 
 /* s1___________________________ */
-.s1{margin-top: 7rem;}
+.s1{margin-top: 10rem;}
 .sub-title{color: var(--medium-gray);}
 
 .s1-card{
@@ -116,7 +116,6 @@
 .s1-card-tags {
   display: flex;
   gap: 0.5rem;
-  margin-top: 0.3rem;
 }
 .s1-card-tag{
   font-size: 1.3rem;
@@ -128,7 +127,6 @@
 .s1-card-desc {
   color: var(--dark-gray);
   font-size: 1.4rem;
-  margin-top: 0.3rem;
 }
 
 .add-to-wish{
@@ -183,7 +181,7 @@
 }
 
 /* s2_______________________________________ */
-.s2{margin-top: 3rem;}
+.s2{margin-top: 6rem;}
 
 .class-icons{
   margin-top: 4rem;
@@ -213,7 +211,7 @@
 }
 
 /* s3____________________________________ */
-.s3{margin-top: 7rem;}
+.s3{margin-top: 10rem;}
 
 .keywords{
   margin-top: 4rem;
@@ -248,7 +246,7 @@
 }
 
 /* s4_______________________________ */
-.s4 {margin-top: 7rem;}
+.s4 {margin-top: 10rem;}
 .place-swiper{margin-top: 4rem;}
 .swiper2{
   width: 10rem !important; 
@@ -410,7 +408,7 @@
 .place-tab-contents > div.active{display: block;}
 
 /* s5_______________________________ */
-.s5 {margin-top: 7rem;}
+.s5 {margin-top: 10rem;}
 
 .day {
   margin-top: 4rem;
@@ -467,7 +465,7 @@
 
 /* s6_______________________________ */
 
-.s6{margin-top: 7rem;}
+.s6{margin-top: 10rem;}
 .community-container{
   margin-top: 4rem;
   height: 31rem;
@@ -528,7 +526,7 @@
 }
 
 /* s7_______________________________ */
-.s7{margin-top: 7rem;}
+.s7{margin-top: 10rem;}
 .story_container{margin-top: 4rem;}
 .storys {
   display: grid;
@@ -562,7 +560,7 @@
 }
 
 /* s8_______________________________ */
-.s8{margin-top: 7rem;}
+.s8{margin-top: 10rem;}
 .best {margin-top: 4rem;}
 .best-lists {
   display: flex;
