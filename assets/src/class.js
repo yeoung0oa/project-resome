@@ -9,17 +9,14 @@ wishBtn.forEach(item => {
 //Morebtn
 $(document).ready(function () {
 
-    $(".cards .card-row").hide();
-    $(".cards .card-row").slice(0, 3).show();
+    $(".category-content .card-row").hide();
 
     $(".morebtn").click(function () {
-      $(".cards .card-row:hidden").slice(0, 1).slideDown();
-
-      if ($(".cards .card-row:hidden").length === 0) {
+      $(".category-content .card-row").slideDown();
         $(this).hide();
-      }
     });
   });
+
 
 //movie slider
 document.querySelectorAll('.swipers').forEach(function(elem) {
@@ -40,6 +37,7 @@ $(document).ready(function () {
 
     const target = $(this).data("category"); 
     const $targetSection = $("#" + target); 
+    const headerHeight = $(".top").outerHeight();
 
     $(".icons .box").removeClass("active");
     $(this).addClass("active");
@@ -48,7 +46,7 @@ $(document).ready(function () {
     $targetSection.addClass("active").show();
 
     $("html, body").animate({
-      scrollTop: $targetSection.offset().top - 80
+      scrollTop: $targetSection.offset().top - headerHeight - 80
     }, 300);
   });
 

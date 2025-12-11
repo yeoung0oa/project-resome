@@ -52,31 +52,22 @@
   height: 6.3rem;
   margin-right: 3rem;
 }
-.cards{
-  display: flex;
-  flex-direction: column;
-}
+.cards,
 .card-row,
 .card1{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  margin: 0 1.5rem;
   margin-bottom: 1.8rem;
 }
 .card{
-  width: 19rem;
-  height: 26.5rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
   border-radius: 2rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.6rem;
-  background: #FFF;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-  padding: 0;
-  position: relative;
+  margin-bottom: 1.8rem;
 }
 .card-inner{
   position: relative;
@@ -111,6 +102,11 @@
   color: var(--black);
   line-height: 1.8rem;
   margin-top: 0.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card .card-inner .card-txt ul li:nth-child(3){
   color: var(--secondary);
@@ -246,24 +242,20 @@
   font-size: 2rem;
 }
 .icons{
-  margin: auto;
-  margin-top: 3rem;
-  width: 38.5rem;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 3rem 1.5rem 0 1.5rem;
 }
 .icons .box{
-  width: 18.5rem;
-  height: 18.5rem;
-  border-radius: 2rem;
   position: relative;
-  display: flex;
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2rem;
+  overflow: hidden;
 }
-.icons .box:last-child{
-  grid-column: span 1;
-  justify-self: center;
-}
+
 .icon h6{
   font-family: 'SchoolSafetyRoundedSmile', sans-serif;
   font-weight: var(--bold);
